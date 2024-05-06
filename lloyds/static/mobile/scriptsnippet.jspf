@@ -1,0 +1,146 @@
+
+String.prototype.format = function() {
+    var args = arguments;
+    return this.replace(/\{(\d+)\}/g, function() { 
+        return args[arguments[1]];
+    }); 
+};
+var DI = {
+componentPath: '/assets/lib/ress/components/',
+    lang : {
+        compareAndBuy : {
+            messages : {
+                popUpWarn : "You may be taken to a desktop site that is not optimised for your device"
+            }
+        },
+        accountOverview : {
+            ajax : {
+                url: "/personal/ajax/mobileSRAccounts",
+                messages : {
+                    earned : "Total earned",
+                    error : "<p><strong>Oops :(</strong> - something went wrong please try again later.</p>" 
+                    
+                }
+            }
+        },
+        smartReward : {
+            clickHub : {
+                ajax : {
+                    messages : {
+                        activate : "<p><strong>offer</strong> has been&nbsp;chosen and moved to <strong>Shop</strong></p>",
+                        error : "<p><strong>Oops :(</strong> - something went wrong please try activating your offer again</p>"
+                    }
+                }
+            },
+            miniStatement : {
+                ajax : {
+                    url: "/personal/ajax/mobileSRStatementsOffer",  
+                    offerShowHideUrl : "#",
+                    messages : {
+                        offerSwitchOn : "Hide SmartRewards in statement",
+                        offerSwitchOff : "Show SmartRewards in statement",
+                        error : "<p><strong>Oops :(</strong> - something went wrong please try activating your offer again</p>",
+                        datePre : "by"
+                    }
+                }
+            }
+            },
+        vef : {
+            ajax : {
+                url : "/personal/ajax/showHideMobileVEF",
+     			creditUrl : "/personal/ajax/showHideVEFMobileCC",     			
+                offerShowHideUrl : "#",
+                messages : {
+                   showTransactions : "See all",
+                    hideTransactions : "Hide"
+                   
+                },
+                loadingUrl : "/assets/HalifaxRetail/mobiledefault/img/icons/loading-small.gif"
+            }
+            },
+			vtd : {
+				ajax : {
+					debitUrl : "/personal/ajax/showHideVTDMobileDC",
+					creditUrl : "/personal/ajax/showHideVTDMobileCC"
+            }
+        },
+		
+		vtdDebitSantiago : {
+				ajax : {
+					pendingurl : "data/fake-vcd-mobile-data0.html",
+					detailurl : "/personal/ajax/showHideVTDMobileDC",
+					offerShowHideUrl : "#",
+					messages : {
+						showTransactions : "See all",
+						hideTransactions : "Hide"
+					},
+                loadingUrl : "../assets/theme/img/icons/loading-small.gif"
+            }
+        },
+		vtdCreditSantiago : {
+				ajax : {
+					pendingurl : "/personal/ajax/showHideVEFMobileCC",
+					detailurl : "/personal/ajax/showHideVTDMobileCC",
+					offerShowHideUrl : "#",
+					messages : {
+						showTransactions : "See all",
+						hideTransactions : "Hide"
+					},
+                loadingUrl : "../assets/theme/img/icons/loading-small.gif"
+            }
+        },        
+        vtdDebit : {
+            ajax: {
+                                    detailurl: "/personal/ajax/showHideVTDMobileDC",
+                                    loading: "Loading Transactions....",
+                                    errors: "Error occurred while loading data",
+                                    notAvailable: "We can't load your transactions at the moment. Please try again  later."
+                  }
+      },
+		vtdCredit : {
+            ajax: {
+                                    detailurl: "/personal/ajax/showHideVTDMobileCC",
+                                    loading: "Loading Transactions....",
+                                    errors: "Error occurred while loading data",
+                                    notAvailable: "We can't load your transactions at the moment. Please try again later."
+                  }
+        },
+        setupQs : {
+            ajax : {
+                url : "/personal/ajax/mobileSETUP"
+            }
+            
+        },
+        validation : {
+            errors : {
+                formErrors : "Information in the highlighted areas is incorrect. Please correct it and try again.",
+                ValidateEmail : "Sorry, this email format is incorrect.",
+                ValidateEqual : "Please check that your email addresses match.",
+                ValidateRequired : "Please complete this field.",
+                ValidateRequiredRadio : "Please complete this field."
+           }
+        },
+        customerBar:{
+            ajaxError: '<div class="error-text">An error has occurred please try again</div>'
+
+        },
+		baselinePJB : {
+			url : '/personal/ajax/paymentJrnyBoxMobile'
+		},       
+        
+    validation : {
+            errors : {
+                ValidateRequiredRadio: 'Please select an option',
+                ValidateRequired:'Please enter a value'
+            }
+        },
+         iccPlanNameOverlay: {
+			url:"/personal/ajax/planName"
+		},
+        errorMessages : {
+            defaultGlobalErrorMessage : [
+                'There is a problem with some of the information you have submitted.<br/>Please amend the fields highlighted below and re-submit this form.'
+            ]
+        }
+    },
+};

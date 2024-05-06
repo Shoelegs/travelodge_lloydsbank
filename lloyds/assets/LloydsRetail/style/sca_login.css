@@ -1,0 +1,1081 @@
+/***************
+* HEADER
+***************/
+
+#wrapper {
+    position: relative;
+    width: auto;
+    min-height: 100%;
+    background: none;
+    min-width: 980px;
+}
+
+#header-wrapper {
+    background-color: #006A4D;
+}
+#wrapper .outer {
+    height: 94px;
+    max-width: 978px;
+    min-width: 320px;
+    background-color: #006A4D;
+    padding: 0 27px 0 22px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#header p#logo {     
+    position: absolute;
+    left: 5px;
+    top: 24px;
+    margin: 0 0 0 3px;
+    width: 210px;
+    height: 52px;
+    z-index: 10;
+    overflow: inherit;
+    background:transparent url(../img/logo_header.png) no-repeat scroll 0 0;
+}
+
+#header div.loggedIn {
+    float: right;
+    padding: 34px 0;
+    color: #FFF;
+    font-size: 16px;
+    text-align: right;
+    margin: 0 24px;
+}
+
+#header div.loggedIn ul, #header div.loggedOut ul {
+    margin: 0 0 0 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#header div.loggedIn ul li, #header div.loggedOut ul li .cookie {
+    display: inline;
+    margin-left: 10px;
+}
+
+#header div.loggedIn a {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: underline;
+    /* font-family:'Arial, Verdana, Helvetica, sans-serif'; */
+}
+
+#header .secureMsg {
+    float: right;
+    margin: 14px 16px 14px 15px;
+    padding: 6px 2px 0px 2px;
+    width: 280px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+#header .secureMsg p a {
+    display: block;
+    margin: 0;
+    padding: 0 0 0 35px;
+    text-decoration: underline;
+    color: #fff;
+    background: none;
+}
+
+.secureMsg p:last-child {
+    margin-top: 4px;
+    margin-left: 4px;
+    font-family: 'Lloyds_Jack_Light', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.pageWrap {
+    background: none;
+    display: block;
+    max-width: 978px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+#page {
+    padding: 12px 12px 12px 0px;
+    background: none;
+}
+
+.primary {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 12px 6px;
+    padding: 0;
+    background-color: #FFF;
+    border: none;
+    z-index: 1;
+}
+
+/***************
+*   FOOTER
+****************/
+
+#footer {
+    background-color: #006A4D;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#footerInner {
+    position: relative;
+    margin: 0 auto !important;
+    padding: 12px 0;
+    border-bottom: 0;
+    text-align: left;
+    max-width: 980px !important;
+}
+
+#footerInner p {
+    color: #FFFFFF;
+    padding-left: 6px;
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+#footer li {
+    padding: 0 5px;
+    border: none;
+    display: inline;
+}
+
+
+/***************
+*   LOGIN
+****************/
+.content h1 {
+    font-family: 'Lloyds_Jack_Medium',Arial,Helvetica,sans-serif;
+    font-size: 42px;
+    line-height: 48px;
+    padding: 0px;
+}
+
+.inner p {
+    font-size: 18px;
+    font-family: 'Lloyds_Jack_Light', Arial, Helvetica, sans-serif;
+}
+
+.inner p strong {
+    font-family: 'Lloyds_Jack_Medium', Arial, Helvetica, sans-serif;
+}
+
+.formFieldInner label {
+    display: block;
+    font-family: 'Lloyds_Jack_Medium', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+    padding-bottom: 6px;
+}
+
+#tmpUserID, #tmpPassword {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #767676;
+    background-color: #fff;
+}
+
+.formFieldInner input[type='text'],
+.formFieldInner input[type='password'] {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #767676;
+    background-color: #fff;
+    padding-left: 10px;
+}
+
+.formFieldInner {
+    padding-bottom: 20px;
+}
+
+.primary .subpanel {
+    margin: 1.7em 0;
+    padding: 9px;
+    background: #fff;
+}
+
+.partShadow {
+    border: 0.5px solid #333;
+    box-sizing: border-box;
+    padding: 14px;
+}
+
+.partShadow:first-child {
+    border-bottom: none;
+}
+
+.partShadow h2 {
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #006A4D;
+    font-family: 'Lloyds_Jack_Medium',Arial, Verdana, Helvetica, sans-serif;
+}
+
+#page:after {
+    display: block;
+    clear: both;
+    content: '.';
+}
+
+input.submitAction {
+    float: right;
+    margin: 6px;
+    width: auto;
+    height: 48px;
+    background-color: #006A4D;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    border: 0.5px solid #006A4D;
+    text-align: center;
+    margin-right: 0;
+}
+
+.loginActions {
+    padding-top: 17px;
+    border-top: 1px solid #bfbfbf;
+}
+
+.loginActions .linkList {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    margin: 24px 0;
+    padding: 0;
+}
+
+.loginActions .linkList a {
+    font-size: 18px;
+    font-weight: normal;
+    color: #006A4D !important;
+    text-decoration: underline !important;
+    font-family: 'Lloyds_Jack_Light', Arial, Helvetica, sans-serif;
+}
+
+.salesPromo .Img, .salesPromo .Msg {
+    display: inline-block;
+}
+
+.salesPromo .Img {
+    margin: 10px;
+}
+.salesPromo .Msg {
+    position: absolute;
+    margin: 10px;
+}
+
+.Msg p {
+    font-size: 16px;
+}
+
+.loginCheckbox label {
+    display: inline-block;
+    font-weight: normal;
+    font-family: 'Lloyds_Jack_Light', Arial, Helvetica, sans-serif;
+}
+
+div#sca-auth-cwa {
+    height: 500px;
+}
+
+.warn-msg p {
+    font-size: 15px;
+}
+
+/* Show hide feature css*/
+
+.formPwdInner {
+    width: 312px;
+    border: 1px solid #767676;
+    background-color: #FFF;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.formPwdInner #frmLogin\:strCustomerLogin_pwd {
+    border: none;
+    width: 72%;
+    outline: none;
+}
+
+@media only screen and (min-width: 992px) {
+    .formPwdInner:focus-within {
+        -moz-outline-radius: 5px;
+        outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    .formPwdInner #frmLogin\:strCustomerLogin_pwd {
+        border: none;
+        width: 79.8%;
+        outline: none;
+    }
+}
+
+.formField.error .formPwdInner {
+	border: 1px solid #db0000;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.showPwd::-ms-reveal,
+.showPwd::-ms-clear {
+  display: none;
+}
+
+#pwdLink {
+    font-size: 15px;
+    font-family: 'Lloyds_Jack_Medium', Arial, Helvetica, sans-serif;
+}
+
+/* End of Show hide feature css*/
+
+
+/***************
+*   ENTER MI
+****************/
+fieldset.memInfoSelect div {
+    display: inline-block;
+    margin-right: 18px;
+    margin-bottom: 0px !important;
+}
+.actions .secondaryAction {
+    display: inline-block;
+    /* float: right; */
+}
+
+ul.actions {
+    list-style: none;
+    border-top: 1px solid #bfbfbf;
+    padding-top: 18px;
+    padding-left: 0;
+}
+
+.secondaryAction {
+    padding-top: 20px;
+}
+
+.secondaryAction a {
+    color: #006A4D;
+    font-size: 18px;
+    font-family: 'Lloyds_Jack_Medium', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    padding-left: 0;
+}
+
+.enterMemoInfo {
+    margin: 0px !important;
+}
+
+.enterMemoInfo p {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.enterMemoInfo ul.linkList {
+    padding: 0px;
+    list-style: none;
+    margin-bottom: 24px;
+    margin-top: 8px;
+}
+
+.enterMemoInfo ul.linkList li a{
+    padding: 0px;
+    color: #006A4D;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.memInfoSelect select {
+    width: 154px;
+    height: 48px;
+    border: 1px solid #767676;
+    font-family: 'Lloyds_Jack_Medium',Arial, Verdana, Helvetica, sans-serif;
+    -webkit-appearance: none; 
+   -moz-appearance: none;
+    appearance: none;
+    font-size: 18px;
+    padding: 12px;
+    color: #505050;
+    background: url(../img/icons/chevron-down-primary.png) no-repeat 92% center
+}
+
+.reenterPara p{
+    margin-bottom: 20px !important;
+    font-family: 'Lloyds_Jack_Medium',Arial, Verdana, Helvetica, sans-serif !important;
+    font-weight: 500;
+    font-size: 15px !important;
+}
+
+select::-ms-expand { 
+    display: none; /* hide the default arrow in ie10 and ie11 */
+}
+
+.secondary .accordion h2 .ui-icon {
+    width: 17px;
+    height: 16px;
+    background: url(../img/icons/chevron-down-primary.png) 0 0 no-repeat;
+}
+
+
+.paneInner ul {
+    list-style-type: none;
+    padding-left: 6px;  
+}
+
+.memInfoSelect .formFieldInner label{
+    font-size: 18px;
+}
+
+.memInfoSelect span.error {
+    display: block;
+    margin-bottom: 0 !important;
+}
+
+.memInfoSelect .formField {
+    width: 573px;
+}
+
+/***************
+*   CHECKBOX
+****************/
+
+.loginCheckbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-left: 35px;
+}
+.loginCheckbox input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.loginCheckbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  border: 1px solid #767676;
+  margin-left: 0px;
+
+}
+
+.loginCheckbox input:checked {
+  background-color: #72a418;
+}
+
+.loginCheckbox input:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.loginCheckbox input:checked:after {
+  display: block;
+}
+
+.loginCheckbox input:checked:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/***************
+*   TOOLTIP
+****************/
+.cxtHelp {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 2px solid #006A4D;
+    border-radius: 250px;
+    text-align: center;
+    padding: 1px;
+    margin-top: 6px;
+    margin-left: 4px;
+}
+a.cxtTrigger {
+    font-size: 13px;
+    color: #006A4D;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#cxtHelp1 {
+    padding: 10px;
+    background: #ecf0f2;
+    border: 1px solid #acacac;
+}
+
+#cxtHelp1 h3 {
+    font-size: 12px !important;
+}
+
+.content .cxtHelp {
+    display: inline-block; /* For Safari */
+    position: relative;
+}
+.content .cxtHelp .refPoint .contextual .help h3 { /*galaxy 23845 - prevents indentation of tooltips within the accounts wrapper*/
+    margin-left:0;
+    padding-left:0;
+}
+.content .fieldHelp .cxtHelp,
+.content .radioFieldPanel .cxtHelp  {
+    font-size: 12px;
+}
+.content h2 .cxtHelp {
+    font-size: 0.8em;
+}
+.content .fieldHelp .cxtHelp,
+.content h2 .cxtHelp {
+    z-index: 999!important;
+}
+/* fix for GALAXY-8546 */
+.content .panel .inner .inlinerow .cxtHelp {
+    font-size: 12px !important;
+}
+
+.content .fieldHelp .addHelp {
+    display: block;
+    clear: left;
+    margin-bottom: 0.7em;
+}
+
+.content table thead th .cxtHelp {
+    margin-right: -15px;
+}
+
+.content .cxtHelp a.cxtTrigger {
+    display: inherit!important; /* fix ff2 */
+    font-size: 1em!important;
+    font-weight: bold;
+    text-decoration: none;
+}
+.content .cxtHelp a:hover {
+    text-decoration: underline;
+}
+
+/*making tooltips inline with checkboxes/radios consistent*/
+.content .formFieldInner span.label span.cxtHelp,
+.content .formFieldInner label span.cxtHelp {
+    margin-left:3px;
+    font-size:1em !important;
+}
+
+.content .checkbox .formFieldInner .cxtHelp a.cxtTrigger {
+    font-size: 13px !important;
+    margin-top: 0px;
+}
+.content .formFieldInner label span.cxtHelp, .content .formFieldInner label .cxtHelp a.cxtTrigger{margin-left:0 !important;}
+
+.content .cxtHelp .refPoint {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.content .cxtHelp .contextual {
+    position: absolute;
+    left: -22px;
+    bottom: 8px;
+    padding: 0;
+    width: 320px;
+    z-index: 99999;
+    /* Standard */
+    border-radius: 8px;
+    /* Mozilla */
+    -moz-border-radius: 8px;
+    /* Webkit */
+    -webkit-border-radius: 8px;
+    background: #d3cfcf;
+    text-align:left;
+}
+
+.content .cxtHelp .contextual ul.linkList li{
+    text-align:left;
+}
+
+.content .cxtHelp .contextual.left {
+    left: -282px;
+}
+.content .cxtHelp .contextual .pointer {
+    position: absolute;
+    left: 20px;
+    bottom: -11px;
+    width: 19px;
+    height: 13px;
+    background: url(../img/help/cxthelp_arrow.png) 0 0 no-repeat;
+}
+.content .cxtHelp .contextual.left .pointer {
+    left: 280px;
+}
+.content .cxtHelp .help { /* fix for ie */
+    /* this line was originally written with two slashes at the front //position: relative; */
+    /* unsure as to the orginal intent of the // */
+    position: relative;
+    left: 0;
+    top: -1px;
+    margin: 0;
+}
+.content .cxtHelp .help h2 {
+    margin-right: 20px;
+    font-size: 13px;
+    color: #323233;
+}
+.content .dateGroup .cxtHelp .help h2 {
+    font-size: 12px;
+}
+
+.content .cxtHelp .help ul.linkList {
+    float: none!important;
+}
+
+.content .cxtHelp .help  p {
+    display: block!important;
+    float: none!important;
+    margin: 0 0 1em!important;
+    padding: 0!important;
+    font-size: 13px !important;
+    font-weight: normal!important;
+    color: #323233;
+    background: none!important;
+}
+
+.content .cxtHelp p.close,
+#overlay .cxtHelp p.close {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    width: 14px !important;
+    height: 14px;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 1px !important;
+    background: url(../img/icons/cross.png) 0 0 no-repeat !important;
+}
+.content .cxtHelp p.close a {
+    display: block;
+    width: 14px !important;
+    height: 13px;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-top: 16px !important;
+    background: transparent !important;
+}
+
+.content label .cxtHelp a.cxtTrigger {
+    font-weight: normal;
+    font-size: 1em;
+}
+.content label .cxtHelp .contextual { /* reset inherited values from label */
+    font-size: 1em;
+    font-weight: normal;
+}
+.content dl.summary dd.help {
+    font-size: 1em;
+}
+
+/* inner content wrapper - scrolls if exceeds height defined in js */
+.content .cxtHelp .contextual .contentInner {
+    clear: both;
+    overflow: auto;
+    padding-right: 10px;
+    font-weight: normal;
+    min-height:30px;
+}
+.content .cxtHelp .help .infoMessage.alert.scrollGesture {
+    margin-bottom: 10px;
+}
+.content .cxtHelp .help .infoMessage.alert.scrollGesture p {
+    padding: 1.2em 14px 0 40px !important;
+    margin-bottom: 0 !important;
+    background: url(../img/horiz_div_white_bg.png) repeat-x left top transparent !important;
+}
+
+
+
+.Accessibilityhidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+.content span.cxtHelp a.cxtTrigger {
+    display:none!important;
+}
+.content span.cxtHelp a.cxtTrigger.infoIcon {
+    font-family: 'Lloyds Jack Medium', arial, sans-serif!important;
+    display: inline-block!important;
+    font-weight: bold!important;
+    text-align: center;
+    border-radius: 50%;
+    color: #006a4d!important;
+}
+.content span.cxtHelp a.cxtTrigger.infoIcon:hover {
+    text-decoration:none;
+}
+
+.contentInner h2 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.contentInner li a {
+    display: inline-block;
+    padding: 0 0 0 22px;
+    text-decoration: none;
+    color: #006a4d;
+    background: url(../img/icons/arrow.png) 0 2px no-repeat;
+    overflow: hidden;
+    min-height: 16px;
+}
+
+/* Browser Incompatibility css
+---------------------------------------*/
+
+.msgErrorBrowser{
+    background: url(../img/icons/browserErrWarn.png) 24px 38px no-repeat;
+    background-color: #FFF7E8;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.msgBLBrowser p {
+    color: #505050;
+    font-family: 'Lloyds_Jack_Medium',Arial, Verdana, Helvetica, sans-serif;
+    font-size: 18px !important;
+    font-weight: bold;
+    line-height: 24px !important;
+    padding-left: 72px;
+    padding-bottom: 18px;
+    padding-right: 22px;
+}
+
+.msgBLBrowser a {
+    color: #006A4D;
+    font-family: 'Lloyds_Jack_Medium',Arial, Verdana, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.blockBrowser {
+    display: none ;
+}
+
+.backToHomepage {
+    float: right;
+    margin-top: 30px;
+}
+
+.pageWrap.loginError {
+    padding-left: 0px;
+}
+
+.headerErrMsgTag {
+    color: #323233;
+    font-family: 'AvenirNxtPro', Arial, Helvetica, sans-serif;	
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 54px;
+}
+
+/* End of Browser Incompatibility css
+---------------------------------------*/
+
+/* Styling of Spinner css
+---------------------------------------*/
+
+/* .spinnerLoad {
+    padding-top: 20%;
+    left: 42%;
+    position: relative;
+} */
+
+/* End of Spinner css
+---------------------------------------*/
+
+/*Mobile Logon Overlay CSS Starts*/
+
+.overlayBox{
+    display:none;
+}
+.overlayBox .customerDetails {
+    background: none;   
+    text-align: center;
+    padding: .7em 14px 0 14px;
+}
+.overlayBox .customerDetails h1 {
+    float: none;
+    font-weight: bold !important;
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+    font-size: 26px;
+    line-height: 34px;
+    padding: 0px;
+}
+.outerOverlay #overlayWrapper .subPanel, .overlayBox .inner .subPanel {
+    border:none;
+    background: none;
+}
+.overlayBox .inner .colLayout .colPart {
+    float:none;
+} 
+.overlayBox .inner .linkList {
+    text-align: center; 
+}
+.overlayBox .inner .linkList li {   
+    font-weight: normal;
+    line-height: 1.9em;
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+    display: inline-block;
+    font-size: 14px;
+}
+.overlayBox .inner .linkList li span.tickIcon {
+    background: transparent url(../img/icons/tick.png) no-repeat scroll 0 2px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+.overlayBox .productPromoImg {
+    max-height: 140px;
+    max-width:440px;    
+}
+.overlayBox .productPromo {
+    text-align: center; 
+    margin-top:28px; 
+}
+.overlayBox ul.actions li a.primaryActionLink {
+    font-weight: bold;
+    padding: 10px;
+    float: right;
+    text-decoration: none;
+}
+.overlayBox ul.actions li a.primaryActionLink:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+.overlayBox ul.actions {
+    margin-top: 0px;
+    padding-right:20px;
+}
+.overlayBox ul.actions li a.button {
+    font-size: 1em;
+    border: none;
+    padding: .78em 1.6778em;
+    color: #ffffff;
+    font-weight:bold;
+    text-decoration: none;
+    background: #649c00;
+    background-color: #649c00;
+    background: -moz-linear-gradient(top, #72a418 0%, #5a8d00 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #72a418 0%), color-stop(100%, #5a8d00));
+    background: -webkit-linear-gradient(top, #72a418 0%, #5a8d00 100%);
+    background: -o-linear-gradient(top, #72a418 0%, #5a8d00 100%);
+    background: -ms-linear-gradient(top, #72a418 0%, #5a8d00 100%);
+    background: linear-gradient(to bottom, #72a418 0%, #5a8d00 100%);    
+    float: right; 
+    margin-bottom: 18px;
+    margin-left: 12px;
+}
+.outerOverlay #overlay {
+    border:none;
+    background:white;
+    padding:0px; 
+    width:65%; 
+    left:48%;
+    border-radius:0px;
+}
+.outerOverlay #overlay #overlayCont {
+    border:none;
+    background:none;
+    padding:0px 0 20px 0;
+}
+.outerOverlay #olMask { 
+    opacity: 0.8;
+}
+.mobileStandard {
+    visibility:hidden;
+}
+.overlayBox .overlayContent a.overlayfocus {
+    position: absolute; 
+    opacity: 0;
+}
+/*Mobile Logon Overlay CSS Ends*/
+
+/* Start: CSS for sp_pat_535 */
+.overlayBox .overlayHeader {
+    padding: 5px 10px 0 10px;
+    min-height:60px;
+    background:#006a4d;
+    margin-bottom:20px;
+}
+.overlayBox .overlayHeader span.brandLogo {
+    float:left;
+}
+.overlayBox .overlayHeader span.brandLogo img {
+    padding: 5px;
+    width:80%;
+}
+.overlayBox .overlayHeader .secureMessage {
+    float:right;    
+    margin-top:10px;
+}
+.overlayBox .overlayHeader .secureMessage img {
+    width:80%;
+    float:right;
+    padding: 5px;
+}
+
+.clearfix:after{
+    display: block;
+    clear: both;
+    height: 0;
+    content: ".";
+    visibility: hidden;
+}
+
+/* End: CSS for sp_pat_535*/
+.sca-2fa-cwm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 200px);
+    height: -webkit-calc(100vh - 200px);
+    height: -moz-calc(100vh - 200px);
+}
+
+/********************************
+*  Capture Memorable information
+*
+*********************************/
+.capture-memorable-info ul li {
+    font-family: 'Lloyds_Jack_Light', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 6px;
+    line-height: 24px;
+    color: #323233;
+}
+
+.capture-memorable-info .body-copy {
+    font-size: 15px;
+    font-family: 'Lloyds_Jack_Light', Arial, Helvetica, sans-serif;
+}
+
+.showHide {
+    border-top: 1px solid #EFEDEA;
+    border-bottom: 1px solid #EFEDEA;
+    padding-top: 20px;
+    margin-bottom: 16px;
+}
+
+.showHide a{
+    text-decoration: none;
+    display: block;
+}
+
+.showHide.closed .trigger a {
+    background: url(../img/icons/chevron-down-primary.png) no-repeat 92% center;
+}
+
+.showHide .trigger a{
+    background: url(../img/icons/chevron-up-primary.png) no-repeat 92% center;
+}
+
+input.submitAction {
+    width: 106px;
+    /* padding: 12px; */
+}
+
+.pseudoLink {
+    font-family: 'Lloyds_Jack_Medium',Arial,Helvetica,sans-serif;
+    /* background: url(../img/icons/chevron-right.png) no-repeat 9% center;
+    background-size: 11px 13px; */
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.capture-memorable-info ul.actions {
+    padding-left: 0px;
+}
+
+.capture-memorable-info ul.actions li:not(:first-child) {
+    margin-top: 16px;
+}
+
+/***************************************
+* End of Capture Memorable information
+*
+****************************************/
+.content ul.quickFAQs {
+ list-style: none
+ }
+
+ .resetpwdmiform .formFieldInner input[type='text'], .formFieldInner input[type='password'] {
+   height:40px;
+   width:300px;  
+}
+
+.resetpwdmiform span.subheadingTaurus h2 {
+   color: #505050;
+}
+
+.resetpwdmiform .pane {
+    font-family : 'Lloyds_Jack_Medium',Arial,Helvetica,sans-serif;    
+    font-size:18px;
+}
+
+.resetpwdmiform .inner ul {
+    font-family : 'Lloyds_Jack_Medium',Arial,Helvetica,sans-serif;    
+    font-size:18px;
+ }
+ /********************************
+ *  Activation code
+ *
+ *********************************/
+ #collapsibleAccordion p {
+     font-size: 15px;
+     font-family: 'Lloyds_Jack_Light', Arial, Helvetica, sans-serif;
+ }

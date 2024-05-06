@@ -1,0 +1,119 @@
+/*
+-----------------------------------------------
+Galaxy IB - Lloyds TSB CSS: hasJS
+Styles to control load flicker etc
+
+This stylesheet is written in at runtime by custom.js
+Therefore styles in this file can assume the user HAS JavaScript
+----------------------------------------------- */
+
+/* Contextual help
+---------------------------------------*/
+.help {
+	display: none;
+}
+.cxtHelp .help {
+	display: block;
+}
+.hasJS .hideJS {
+	position: absolute !important;
+	left: -9999px;
+}
+
+/* FATCA */
+.hasJS .hiddenNationality {
+	display: none;
+}
+
+.content .dynconSelectionCopyExchange {
+	display: block;
+}
+
+.hasJS .updateHelpCopy { display:none !important; }
+
+/* Select accounts overlay 
+---------------------------------------*/
+.hasJS .selectBusinessAccount {
+	display: none;
+}
+
+.secondary .accordion .pane {
+	display: none;
+	height: auto !important;
+}
+.secondary .accordion .selected .pane {
+	display: block;
+}
+
+
+.hasJS .content .accountSummary table.moneyInOut { 
+	margin:-15px 0;
+}
+
+.content .branchResults div.closed .pane {
+  display: none;
+}
+
+/* LPI Ineligibility Message
+---------------------------------------*/
+.hasJS .content .LPImessage {
+	display: none;
+}
+
+/* p_07.00_account_overview_with_pagination_v.shtml - Ajax
+----------------------------------------------------------- */
+.hasJS .viewOtherAccounts {
+	display: none;
+}
+
+/* p_81.04_change_overlay.shtml - DOM Element on a page into Overlay
+----------------------------------------------------------- */
+.hasJS .noJSHidden {
+	display: inline;
+}
+
+.hasJS div.noJSHidden,
+.hasJS .block.noJSHidden {
+	display: block;
+}
+
+/* used to hide an element on page load - element display to be later toggled via the statusToggle JS functionality
+--------------------------------------- */
+.hasJS .statusToggleHide {
+	display: none;
+}
+
+/* used to hide an element on OPS
+--------------------------------------- */
+.hasJS .opsNoJSHidden{
+	display: none;
+}
+.hasJS .content .inner .opsJSShow{
+	display: block !important;
+}
+/* To disbale Ops Calulator & hide side content in  OPS Quote */
+.disabledDiv * {
+	color: #ccc !important;
+}
+.disabledDiv {
+	position: relative;
+}
+
+.disabledDiv .disabled{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10000;
+}
+.disabledDiv .slider-input input {
+  text-indent: -999px;
+  background: #fff;
+}
+.tblOPSQuote{
+	visibility:hidden;
+}
+.tblOPSQuoteEnabled{
+	visibility:Visible;
+}

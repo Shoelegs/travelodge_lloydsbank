@@ -1,0 +1,572 @@
+/*
+-----------------------------------------------
+Galaxy IB - Lloyds CSS: Forms
+----------------------------------------------- */
+
+/* Forms
+---------------------------------------*/
+div.formSubmitError {
+	clear: left;
+	min-height: 23px;
+	margin: 1.7em 10px;
+	padding: 6px 0 0 29px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #db0000;
+	background: transparent url(../img/icons/error.png) no-repeat 0 4px;
+}
+.showHide div.formSubmitError {
+	margin-right: 0;
+	margin-left: 0;
+}
+.content input, .content select, .content textarea { 
+	font-family: 'Lloyds_Jack_light', Arial, Verdana, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 1.4em;
+}
+.formField,
+.optionPanel {
+	position: relative;
+	clear: left;
+}
+
+.formField .error {
+    margin-bottom: 10px !important;
+}
+.primary .subPanel .formField {
+	/* margin: 0 6px 1px !important; */
+/*	padding-left: 0 !important; GALAXY-5890 */
+	padding-right: 0 !important;
+}
+.primary .subPanel .inner .formField {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+.primary .showHide .formField {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.formField.error,
+.formField.groupedError,
+.formField.swiftError,
+.optionPanel.optionPanelError {
+	background-color: #fdf2f2;
+    border: 1px solid #f19999;
+    margin-bottom: 14px;
+    padding-left: 10px;
+}
+
+.navBar .formField select.slctViewAccount {
+	max-width: 270px;
+}
+
+.statement .first .tableSorter{
+	padding-right:5px;
+}
+
+.statement .first .tableSorterReverse {
+	padding-bottom:1px;
+}
+
+/* formFieldRow */
+.formFieldRow .formField {
+	float: left;
+	clear: none;
+}
+
+.formFieldRow.error {
+	margin-bottom: 1px;
+	border: 1px solid #f19999;
+	background-color: #fdf2f2;
+}
+.formFieldRow.error .formField.error {
+	border: none;
+	background-color: transparent;
+}
+.formFieldRow.error .formField .error {
+	max-width: 210px;
+}
+
+.hasJS .content .repeatableAddress .formField.groupedError input.first,
+.hasJS .content .previousAddress .formField.groupedError input.first,
+.hasJS .content .additionalPreviousAddress .formField.groupedError input.first {
+	float:left;
+}
+
+.content .formField.groupedError span.groupedError { /* fix for ie */
+	position: relative;
+	top: -5em;
+	display: inline-block;	
+	float: none;
+	background-position: 0 1px;
+	padding-left: 30px;
+}
+
+.content .repeatableAddress .formField.groupedError span.error,
+.content .previousAddress .formField.groupedError span.error,
+.content .additionalPreviousAddress .formField.groupedError span.error {
+	margin-left:0;
+}
+
+#recipientAccountNr{
+	margin-top:2px;
+}
+
+
+
+/* reset the clear: left; above for inline fields and add a margin to push out help */
+.inlineField input,
+.inlineField select {
+	clear: none;
+	margin-right: 1em;
+}
+.fieldHelp input[type="image"] {
+	clear: none;
+	margin-top: 0;
+}
+.fieldHelp input.field + input[type="image"] {
+	/*margin-top: 2px; */
+	margin-top: 0;
+}
+.dateGroup .fieldHelp .date.inputGroup {
+	clear: none;
+	min-width:270px;
+}
+.fieldHelp .date.inputGroup p.note{
+	width:100%;
+}
+
+.fieldHelp .date input,
+.fieldHelp .date select {
+	clear: none;
+	margin-top: 0;
+}
+
+.fieldHelp span.currency + input {
+	clear: none;
+	margin-top: 0;
+}
+
+/* .formField input[type="checkbox"] {
+	position: absolute;
+	top: 6px;
+	left: 3px;
+	width: 13px;
+	height: 13px; 
+	margin: 0 7px 0 0;
+	padding: 2px;
+	overflow: visible;
+} */
+
+
+
+/* webkit fix
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.formField input[type="checkbox"] {
+		top: 8px;
+		left: 5px;
+		padding: 0;
+	}
+}
+
+.externalPane .formField input[type="checkbox"] {
+	top: 8px;
+	left: 4px;
+    padding: 0;
+} */
+
+.formField input[type="radio"] {
+	position: absolute;
+	/*top: 6px;*/
+	top: 8px;
+	left: 6px;
+	width: 13px;
+	height: 13px; 	
+	margin: 0 7px 0 0;
+	padding: 0;
+}
+
+.formField label,
+.formField span.label,
+.radioGroup span.label {
+	display: block;
+	margin: 0 0 .4em 0;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.formField .balance{
+	display:block;
+	font-size:1.2em;
+	margin:0 0 0.4em;
+	clear:both;
+}
+.formField p span.label {
+	font-size: 1em;
+}
+
+.fieldHelp label,
+.fieldHelp span.label {
+	display: inline;
+	float: left;
+	margin-right: 4px;
+}
+.fieldHelp label .normal{
+	font-weight:normal;
+}
+.fieldHelp .inputGroup {
+	clear: left;
+}
+
+.fieldHelp .inputGroup label,
+.fieldHelp .inputGroup span.label {
+	display: block;
+	float: none;
+	margin: 0 0 0.4em;
+}
+
+.fieldHelp .inputGroup input,
+.fieldHelp .inputGroup select {
+	clear: none;
+	margin-top: 0;
+}
+
+.radioGroup span.label,
+.radioGroup label {
+	padding-left: 22px;
+	margin-bottom: 0;
+}
+
+.formField label.title {
+	font-size:1.4em;
+	color:#002776;
+}
+.formField label.title span {
+	font-size:0.8em;
+	color: #505050;
+}
+
+.formField.checkbox label {
+	float: left;
+	margin: 0;
+	padding: 0px;
+	font-weight: normal;
+}
+
+.formField.checkbox p.inlineParagraph {
+	margin-left: 4px;
+	display: inline-block;
+	float: left;
+}
+.formField.checkbox h4 {
+	margin-bottom: 0.4em;
+}
+.formField.checkbox input.inlineLabel {
+	top: 1.95em;
+}
+.formField.fieldHelp.checkbox label {
+	margin-right: 4px;
+	margin-top: 6px;
+	margin-left: 4px;
+}
+.formField.fieldHelp.checkbox label.lumpSum {
+	margin: -5px 0 0 0;
+}
+
+.formField.inlineField label {
+	float: left;
+	margin-right: 1em;
+}
+.formField.stackedField input.field,
+.formField.stackedField select.field,
+.formField.stackedField input,
+.formField.stackedField select {
+	top: 0;
+	left: 0;
+	clear: left;
+	margin-top:1.4em;
+}
+.formField.stackedField input.field.first,
+.formField.stackedField select.field.first,
+.formField.stackedField input.first,
+.formField.stackedField select.first {
+	margin-top:0;
+}
+
+.content .formField input.postcode {
+	width: 6.5em;
+}
+.content .formField.inlineField input.postcode {
+	clear: left;
+	margin-right: 8px;
+}
+
+.content .formField p.example,
+.content .formField p.note {
+	float: left;
+	clear: left;
+	margin-bottom: 0;
+	margin-top: 0.4em;
+}
+
+.content .addBeneficiaries .formField p.note {
+	float: none;
+	clear: none;
+	margin-bottom: 0;
+	margin-top: 0.6em;
+}
+
+.content .formField span.value {
+	display: block;
+	clear: left;
+	font-size: 1.2em;
+}
+.content .formField span.value span.disabled {
+	padding-left: 22px;
+	color: #808080;
+}
+.content .formField span.value + div.showHide {
+	margin-top: 1em;
+}
+.content span.disabled {
+	color: #808080;	
+}
+.content .formField span.value a.linkBullet {
+	margin-left: 0;
+}
+
+.formFieldRow.error span.error,
+.formField.error span.error,
+.formField.groupedError span.error,
+.formField.groupedError span.groupedError,
+.formField.swiftError span.error,
+.optionPanel.optionPanelError span.error {
+	/*padding:1px 0 5px 40px;*/
+	padding:5px 0 5px 26px;
+	font-size: 1.2em;
+	border: none;
+	/*float: left; QC 72820*/
+	background: transparent url(../img/icons/error.png) no-repeat 1px 1px;
+	min-width:160px;
+	max-width:285px;
+	color: #db0000;
+	font-weight: bold;
+}
+
+.error.checkbox span.error {
+	max-width: none;
+}
+
+.optionPanel.optionPanelError span.error {
+	display: block;
+	max-width: none;
+	min-width: 0;
+	margin-bottom: 0.7em;
+	padding-left: 26px;
+	background-position: 0px 1px;
+}
+
+.formFieldRow.error span.error {
+	top: 0.7em;
+}
+.formFieldRow.error:first-child span.error {
+	top: 2.4em;
+}
+.formFieldRow.error .formField.error span.error {
+	position: static;
+	top: 0;
+}
+
+
+#overlay .formField.error span.error {
+	clear: left;
+	margin-top: 0.4em;
+	padding-left: 22px;
+	background-position: 0 1px;
+}
+#overlay fieldset.exportStatement .dateGroup .formField.error span.error {
+	padding-left: 26px;
+	margin: 0 0 0.4em 21px;
+}
+
+.quickTransfer .formField.error span.error {
+	display: inline-block;
+	clear: left;
+	float: left;
+	width: 220px;
+	padding-left: 26px;
+	background-position: 0 1px;
+}
+
+.orderStatementDetails.error span.error {
+	margin-bottom: 0.7em;
+}
+.content .formField.selectHybridSelectBox.error span.error {
+	padding-left: 26px;
+	background-position: 0 1px;
+}
+.loanCalculator .formField.error span.error,
+.currencyConverter .formField.error span.error,
+.collectTravelMoney .formField.error span.error,
+.findBranch .formField.error span.error {
+	display: block;
+	clear: left;
+	margin-top: 0.7em;
+	padding-left: 26px;
+	background-position: 0 1px;
+}
+.searchResults .formField.error span.error {
+	margin: 0.7em 0;
+	padding-left: 36px;
+	background-position: 11px 1px;
+}
+
+.sheetChooser .formField.error span.error {
+	display: block;
+	float: none;
+	margin:0 0 -2em 24%;
+}
+
+.dateRange.error span.error {
+	margin: 1.6em 0 0;
+	padding-left: 26px;
+	background-position: 0 1px;
+	max-width:100%;
+	min-width:160px;	
+}
+
+td.formField.error span.error {
+	clear: left;
+	width: auto;
+	margin: 0.7em 0 0;
+	padding-left: 26px;
+	font-size: 1em;
+	background-position: 0 1px;
+}
+
+.formField input.field {
+	width: 18em;
+	margin: 0 8px 0 0;
+	position: relative;
+}
+.formField input.field-sigdate {
+	width: 90%;
+	margin: 0 8px 0 0;
+	position: relative;
+}
+.formField .radioGroup + input.field {
+	margin-top: 1em;
+}
+.formField input.bigField {
+	width: 32em;
+}
+
+.content .formField input.smallField {
+	width: 3em !important;
+}
+
+.formField select.field {
+	min-width: 18.5em;
+	margin-right: 8px;
+}
+
+fieldset .formField .formFieldInner select {
+	max-width:578px;
+	white-space: nowrap;
+	margin-bottom: 12px;
+}
+.colPart .formField .formFieldInner select,
+.colPart .formField .formFieldInner select option {
+	width: 90%;
+}
+
+
+.formFieldRow.error input.field,
+.formFieldRow.error input[type="text"],
+.formFieldRow.error input[type="password"],
+.formFieldRow.error input[type="textarea"],
+.formFieldRow.error select,
+.formField.error input.field,
+.formField.error input[type="text"],
+.formField.error input[type="password"],
+.formField.error input[type="textarea"],
+.formField.groupedError input.first,
+.repeatableAddress .formField.groupedError input.second, /* P115 requires the first 2 fields to be valid */
+.previousAddress .formField.groupedError input.second, /* P115 requires the first 2 fields to be valid */
+.additionalPreviousAddress .formField.groupedError input.second, /* P115 requires the first 2 fields to be valid */
+.formField.swiftError input.first,
+.formField.error select,
+tr.error td input.field,
+tr.error td input[type="text"],
+tr.error td input[type="password"],
+tr.error td input[type="textarea"],
+tr.error td select {
+	border: 1px solid #db0000;
+}
+
+.formField .inlineHelp,
+.formField .inlineFieldHelp {
+	display: inline-block;
+	font-size: 1.2em;
+	/* min-width:160px; */
+}
+/*fix for slider misalignment of text*/
+.stpLoanCalculator .formField .inlineHelp {
+	margin-top:2px;
+}
+
+.stackedField .inlineFieldHelp {
+	clear: left;
+	float: left;
+	margin: -1.5em 0 0 19em;
+}
+form .amountGroup .error .inlineHelp {
+	margin-left:0.5em;
+	padding-top: 5px;
+	float: left;
+}
+.confirmPassword .formField .inlineHelp {
+	min-width: 0;
+}
+
+.formField label .inlineHelp,
+.formField span.label .inlineHelp,
+.radioGroup span.label .inlineHelp {
+	font-weight: normal;
+	font-size: 1em;
+}
+.formField h2 .inlineHelp,
+.formField h3 .inlineHelp {
+	display: inline-block;
+	margin: 0.25em 0 0;
+	font-weight: normal;
+}
+
+
+/* datepicker */
+.content .radioGroup .formField .inputGroup,
+.content fieldset .formField .date.inputGroup {
+	min-width: 228px;
+}
+.content .formField input.datePicker { /* fix for ie */
+	width: 0 !important;
+	height: 0 !important;
+	margin: -2px -100px 0 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	opacity: 0 !important;
+	visibility: hidden !important; /* to insure the field can't be tabbed into when js disabled */
+}
+body.hasJS .content .formField input.datePicker {
+	visibility: visible !important;
+}
+/* datepicker webkit only */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.content .formField input.datePicker {
+		width: 1px !important;
+		height: 1px !important;
+		float: left !important;
+		display: inline !important;
+	}
+}

@@ -1,0 +1,1211 @@
+/*Mobile Logon Overlay CSS Starts*/
+.overlayBox {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  margin-top: 0px;
+  margin-left: 0px;
+  background-color: #fff;
+  z-index: 11;
+  display: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.overlayBox .overlayHeader {
+  padding: 10px;
+  min-height: 60px;
+  background: #006a4d;
+  margin-bottom: 10px;
+}
+.overlayBox .overlayHeader span.brandLogo {
+  float: left;
+}
+.overlayBox .overlayHeader span.brandLogo img {
+  padding-top: 10px;
+  width: 50%;
+}
+.overlayBox .overlayHeader .secureMessage {
+  float: right;
+  margin-top: 10px;
+}
+.overlayBox .overlayHeader .secureMessage img {
+  max-height: 20px;
+  margin-top: 10px;
+}
+.overlayBox .wysiwygContent {
+  float: left;
+  width: 100%;
+}
+.overlayBox .wysiwygContent .productPromo {
+  padding-top: 15px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 2px;
+}
+.overlayBox .wysiwygContent .productPromo img {
+  width: 52%;
+}
+.overlayBox .wysiwygContent ul {
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+}
+.overlayBox .wysiwygContent ul li {
+  list-style-type: none;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+}
+.overlayBox .wysiwygContent ul li span.tickIcon {
+  background: transparent url("../img/icons/check.png") no-repeat scroll 0 2px;
+  display: inline-block;
+  padding: 0px 20px;
+}
+.overlayBox .mobileOverlayButton {
+  padding: 0px 15px 0px 15px;
+}
+.overlayBox .mobileOverlayButton .submitAction {
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px .7em;
+  margin: 0 0 10px;
+  border-radius: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  border: none;
+  background: #006a4d;
+  background: -moz-linear-gradient(top, #72a418 0%, #5a8d00 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #72a418 0%), color-stop(100%, #5a8d00));
+  background: -webkit-linear-gradient(top, #72a418 0%, #5a8d00 100%);
+  background: -o-linear-gradient(top, #72a418 0%, #5a8d00 100%);
+  background: -ms-linear-gradient(top, #72a418 0%, #5a8d00 100%);
+  background: linear-gradient(to bottom, #72a418 0%, #5a8d00 100%);
+}
+.overlayBox #header h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #333333;
+  background-color: #ffffff;
+}
+.overlayBox .lnkLev2 {
+  margin: 20px 20px 0 20px;
+  text-align: center;
+}
+.overlayBox .lnkLev2P a.blockLink {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #006a4d;
+  text-decoration: none !important;
+}
+/*Mobile Logon Overlay CSS Ends*/
+/* App banner
+-------------------------------------*/
+.hasJS .app-banner {
+  display: none;
+}
+.app-banner {
+  background: #f9f9f9;
+  background: -moz-linear-gradient(top, #fefefe 0%, #e1e1e1 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe 0%), color-stop(100%, #e1e1e1));
+  background: -webkit-linear-gradient(top, #fefefe 0%, #e1e1e1 100%);
+  background: -o-linear-gradient(top, #fefefe 0%, #e1e1e1 100%);
+  background: -ms-linear-gradient(top, #fefefe 0%, #e1e1e1 100%);
+  background: linear-gradient(to bottom, #fefefe 0%, #e1e1e1 100%);
+  padding: 15px 80px 10px 42px;
+  color: #006a4d;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  line-height: 18px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+.app-banner img {
+  box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  margin-right: 10px;
+  margin-top: -5px;
+  border-radius: 10px;
+  float: left;
+  padding: 1px;
+}
+.app-banner div {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1.3;
+}
+.app-banner p {
+  margin: 0 0 0 66px;
+  position: relative;
+}
+.app-banner p:last-of-type {
+  color: #505050;
+  font-size: 14px;
+}
+.app-banner a:not(.close) {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px .7em;
+  margin: 0 0 10px;
+  border-radius: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  border: none;
+  background: #0c6b51;
+  background: -moz-linear-gradient(top, #1a795f 0%, #005f45 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1a795f 0%), color-stop(100%, #005f45));
+  background: -webkit-linear-gradient(top, #1a795f 0%, #005f45 100%);
+  background: -o-linear-gradient(top, #1a795f 0%, #005f45 100%);
+  background: -ms-linear-gradient(top, #1a795f 0%, #005f45 100%);
+  background: linear-gradient(to bottom, #1a795f 0%, #005f45 100%);
+}
+.app-banner a.close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+}
+.app-banner a.close span {
+  background: #77b800;
+  display: inline-block;
+  height: 20px;
+  line-height: 17px;
+  width: 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+/*
+-----------------------------------------------
+Mobile Initiation CSS - Base
+----------------------------------------------- ---- */
+/* Suggested rule structure
+ *
+ * display/visibility:
+ * position:
+ * z-index:
+ * top:
+ * right:
+ * bottom:
+ * left:
+ * float:
+ * clear:
+ * margin:
+ * padding:
+ * width:
+ * height:
+ * overflow:
+ * border:
+ * list-style:
+ * font..:
+ * line-height:
+ * text-align:
+
+ * colour:
+ * background:
+----------------------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: .8em;
+  -webkit-text-size-adjust: 95%;
+  color: #333333;
+  background-color: #ffffff;
+  word-wrap: break-word;
+  line-height: 1.3;
+}
+body.inNGA {
+  padding-top: 1em;
+}
+body,
+input[type='submit'],
+input[type='button'],
+input[type='image'],
+button {
+  font-family: 'LloydsBankJackLight', Helvetica, Arial, sans-serif;
+}
+/* hide class - required for webtrends
+---------------------------------------*/
+.hide {
+  display: none;
+}
+/* Layout
+---------------------------------------*/
+div {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+#outer {
+  /* for non mobile dev purposes */
+  margin: 0;
+}
+.panel {
+  margin: 0;
+  padding: 0 10px;
+}
+.login {
+  padding: 0 10px;
+  background-color: #fff;
+  margin-top: 50px;
+}
+/* Banner
+---------------------------------------*/
+#banner {
+  height: auto;
+  background-color: #006a4d;
+  margin-bottom: 1px;
+  position: relative;
+}
+p#logo {
+  padding: 4px 0 0 0;
+  margin-top: 10px;
+  text-align: center;
+  height: 24px;
+  font-size: 24px;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  padding: 0 0 2px 0;
+}
+p#userStatus,
+p#userstatusNGB {
+  position: absolute;
+  left: 26px;
+  top: 18px;
+  margin: 2px 0 0 0;
+  padding: 0;
+  display: inline-block;
+}
+p#userStatus img,
+p#userstatusNGB img {
+  max-height: 20px;
+}
+/* Header
+--------------------------------------- */
+header {
+  color: #333333;
+  background-color: #ffffff;
+  position: relative;
+}
+header a {
+  color: #333333;
+  text-decoration: underline;
+}
+#headerInner .lnkLev2 {
+  padding: 19px 20px;
+}
+#headerInner .lnkLev2 p {
+  margin: 0;
+}
+header .header-inner {
+  height: 51px;
+}
+header #logo {
+  text-align: center;
+}
+header #logo a {
+  display: inline-block;
+}
+header span.secure,
+header a.toggle-header {
+  position: absolute;
+  text-indent: -9999px;
+  display: block;
+  width: 60px;
+  height: 51px;
+  background: url(../img/header-sprite.png) no-repeat -265px 3px;
+  background-size: 320px;
+}
+header span.secure {
+  top: 20px;
+  left: 20px;
+  background: url("../img/padlock_secure.png") no-repeat 0 0;
+  background-size: 12px 16px;
+}
+header a.toggle-header {
+  top: 0;
+  right: 0;
+}
+header a.toggle-header.open {
+  background-color: #006a4c;
+}
+header span.name {
+  display: block;
+  padding: 10px;
+  font-size: 1.3em;
+}
+header ul {
+  padding: 0;
+  list-style-type: none;
+}
+header ul a {
+  text-decoration: none;
+  text-indent: -9999px;
+  display: block;
+}
+header #user-menu ul li {
+  float: left;
+  width: 33%;
+}
+header #user-menu.four-col ul li {
+  width: 25%;
+}
+header #user-menu ul {
+  margin-bottom: 0;
+}
+header #user-menu ul li.details > *,
+header #user-menu ul li.moreInfo > *,
+header #user-menu ul li.cookie > *,
+header #user-menu ul li.logout > * {
+  display: block;
+  padding: 10px 0 10px;
+}
+header #user-menu ul li.details > * > *,
+header #user-menu ul li.moreInfo > * > *,
+header #user-menu ul li.cookie > * > *,
+header #user-menu ul li.logout > * {
+  display: block;
+  width: 50px;
+  height: 62px;
+  margin: auto;
+  background: url(../img/header-sprite.png) no-repeat -22px -120px;
+  background-size: 360px;
+}
+header #user-menu ul li a {
+  background-image: none;
+}
+header #user-menu ul li.moreInfo > * > * {
+  background-position: -197px -211px;
+  width: 54px;
+}
+header #user-menu ul li.cookie > * > * {
+  background-position: -182px -120px;
+  width: 81px;
+}
+header #user-menu ul li.logout > * {
+  background-position: -23px -202px;
+  width: 46px;
+}
+a {
+  color: #006a4d;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: underline;
+}
+a#lnkForgotUserIDDMC {
+  padding-left: 6px;
+  text-decoration: underline;
+  font-size: 16px;
+  font-family: 'LloydsBankJackLight', Helvetica, Arial, sans-serif;
+  line-height: 24px;
+  font-weight: bold;
+}
+/* FOOTER
+---------------------------------------*/
+#footerLogin {
+  background: #ffffff;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.FootNav {
+  border-top: 1px solid #EAEAEA;
+}
+#footer {
+  margin: 0;
+  padding: 0;
+  border-top: 0.5px solid #E0E0E0;
+}
+.lnkLevFoot a {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 17px 40px 17px 0px;
+  color: #006a4d;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  background: url("../img/link_types/chevron_right_primary_sca.png") no-repeat 95% 50%, #ffffff;
+  background: url("../img/link_types/chevron_right_primary_sca.png") no-repeat 95% 50%, -moz-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+  background: url("../img/link_types/chevron_right_primary_sca.png") no-repeat 95% 50%, -webkit-gradient(linear, left top, left bottom, color-stop(0%, topColor 0%), color-stop(100%, #ffffff));
+  background: url("../img/link_types/chevron_right_primary_sca.png") no-repeat 95% 50%, -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+  background: url("../img/link_types/chevron_right_primary_sca.png") no-repeat 95% 50%, -o-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+  background: url("../img/link_types/chevron_right_primary_sca.png") no-repeat 95% 50%, -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+  background: url("../img/link_types/chevron_right_primary_sca.png") no-repeat 95% 50%, linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+  border-bottom: 1px solid #eaeaea;
+}
+.lnkLevFoot:last-child a {
+  border-bottom: none;
+}
+.lnkLevFootP {
+  margin: 0;
+}
+.lnkLevFoot {
+  padding-left: 25px;
+}
+.footerLinks,
+.footerLinksLogin {
+  padding: 14px 20px 0;
+  background-color: #fff;
+  border-top: 1px solid #fff;
+}
+.footerLinks span,
+.footerLinksLogin span {
+  margin: 0 3px 0 0;
+  padding: 0;
+  border-right: 1px solid #fff;
+}
+.footerLinks span a,
+.footerLinksLogin span a {
+  margin: 0 3px 0 0;
+  padding: 0 6px 0 0;
+  color: #006a4d;
+  font-size: 16px;
+  border-right: 1px solid #fff;
+}
+.footerLinks span.footerlinksLast,
+.footerLinksLogin span.footerlinksLast {
+  border-right: none;
+}
+.footerLinks a,
+.footerLinksLogin a {
+  margin: 0 3px 14px 0;
+  padding: 0 6px 0 0;
+  color: #006a4d;
+  font-size: 1.083em;
+  display: inline-block;
+  width: 45%;
+}
+.footerLinks a.footerLinksLast,
+.footerLinksLogin a.footerLinksLast {
+  border-right: none;
+}
+/* Cookie Policy
+--------------------------------------*/
+.cookiePolicy {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: underline;
+}
+.cookiePolicy a {
+  color: #ffffff;
+  font-family: 'LloydsBankJackLight', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: underline;
+}
+/* Copy styles
+---------------------------------------*/
+.content p,
+.content li,
+.content dt,
+.content dd,
+.content blockquote,
+.content pre,
+.content address,
+.content th,
+.content td,
+.content code {
+  font-size: 16px;
+  line-height: 1.4;
+}
+p,
+label {
+  margin: 0 0 1.2em;
+  padding: 0;
+}
+p.label {
+  margin: 0;
+}
+.actionsLogin {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.submitAction {
+  width: 100%;
+  color: #ffffff;
+  height: 48px;
+  background-color: #006a4d;
+  border: 1px solid #006a4d;
+  margin: 10px 0px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+p.lnkLev2PCancel {
+  height: 30px;
+  display: block;
+  color: #006A4D;
+  text-align: center;
+  text-decoration: none !important;
+  padding: 8px 0px;
+  border-radius: 0;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  border: 1px solid #006a4d;
+}
+#enter_mi .actions {
+  margin-top: 20px;
+}
+/* Log out
+---------------------------------------*/
+#logout {
+  margin: 0;
+  background: #006a4d;
+  border-top: 1px solid #fff;
+}
+#logoutInner {
+  padding: 16px 20px 20px;
+}
+#logoutInner p.msg {
+  margin: 0 4px .5em 0;
+  padding: 4px 0 0 20px;
+  font-size: 1.35em;
+  line-height: 1.4em;
+  color: #ffffff;
+  background: url(../img/icons/padlock_secure_logout.gif) 0 10px no-repeat;
+  background-size: 9px 11px;
+}
+.msgRequestInner {
+  padding: 14px 20px;
+}
+.msgOuterGroup {
+  padding: 0 8px 1em;
+}
+.msgInfo,
+.panel .accountItem .msgInfo {
+  margin: 0 0 14px;
+  background-color: #fffbcc;
+  border: 1px solid #f2e97b;
+  border-width: 1px 0;
+}
+.panel .accountItem .msgInfo:last-child {
+  border-bottom-width: 0;
+  margin-bottom: 0;
+}
+.panel .msgInfo {
+  margin: 0 -20px 14px;
+}
+.msgInfo p.msgP {
+  padding: 14px 20px 0;
+}
+.msgInfo p.msgP:last-child {
+  padding-bottom: 14px;
+}
+#headerInner .msgInfo {
+  margin: 0;
+}
+.msgError {
+  margin: 0 0 7px;
+  background: url(../img/message_types/error_bg.gif) 20px 14px no-repeat;
+  background-size: 26px 24px;
+  border: 1px solid #db0000;
+  border-width: 1px 0;
+  margin: 0 0px 14px;
+}
+.loginInner .msgError {
+  background-position: 40px 14px;
+  padding-left: 20px;
+}
+.msgError .msgP {
+  color: #db0000;
+  font-weight: bold;
+}
+.panelInner .msgError {
+  margin-top: 4px;
+}
+.panelInner.nomargin {
+  padding: 0px;
+}
+.msgTL,
+.msgTR,
+.msgBR,
+.msgBL {
+  background: none;
+}
+p.msgP {
+  margin: 0;
+  padding: 14px 20px 14px 51px;
+  color: #333;
+  font-size: 16px;
+}
+.formField {
+  margin-top: 30px;
+  padding-left: 16px;
+  padding-right: 24px;
+}
+.formField label {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #333333;
+  font-family: 'LloydsBankJackLight', Helvetica, Arial, sans-serif;
+}
+.formField .checkboxLabel {
+  font-weight: 300 !important;
+  font-size: 18px;
+  line-height: 20px;
+  color: #505050 !important;
+  padding-left: 12px;
+}
+.formField input[type='text'],
+.formField input[type='password'] {
+  display: block;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #767676;
+  margin-top: 7px;
+  font-size: 22px;
+  padding-left: 6px;
+}
+.aside {
+  margin-bottom: 15px;
+}
+.aside .nav {
+  margin: 0;
+}
+p.sideNote {
+  padding: 14px 20px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.aside p.copyright {
+  margin-left: 10px;
+  padding-right: 90px;
+}
+/* Checkbox less start here */
+.loginCheckbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 35px;
+  margin-bottom: 40px;
+  margin-left: 12px;
+}
+.loginCheckbox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.loginCheckbox input {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  border: 1px solid #006a4d;
+}
+.loginCheckbox input:checked {
+  background-color: #006a4d;
+}
+.loginCheckbox input:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.loginCheckbox input:checked:after {
+  display: block;
+}
+.loginCheckbox input:checked:after {
+  left: 9px;
+  top: 2px;
+  width: 8px;
+  height: 17px;
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+a#rememberMe {
+  color: #505050 !important;
+  text-decoration: none;
+}
+/* Enter MI
+---------------------------------------*/
+.enter-mi p.sudoLabel {
+  text-align: center;
+  color: #323233;
+}
+.enter-mi .panel {
+  margin-top: 30px;
+}
+.memorableInfo {
+  text-align: center;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+@media (max-width: 320px) {
+  .memorableInfo {
+    margin-left: 20px;
+  }
+}
+.memorableInfo .formField {
+  padding-left: 0px;
+  text-align: center;
+  margin-top: 12px;
+}
+@media (max-width: 320px) {
+  .memorableInfo .formField {
+    padding-right: 11px !important;
+  }
+}
+input.memInfoInput {
+  width: 2em;
+  word-wrap: normal;
+}
+.memorableInfo .formField p {
+  color: #dc2a4d;
+}
+.memorableInfo .formField label {
+  display: block;
+  font-size: 18px;
+  font-family: 'LloydsBankJackMedium', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.memorableInfo .formField p {
+  color: #dc2a4d;
+}
+select.memInfoInput {
+  height: 48px;
+  width: 70px;
+  border: 1px solid #767676;
+  background-color: #FFFFFF;
+  background: url(../img/link_types/chevron_down_sca.png) 70% center no-repeat;
+  padding: 5px;
+  font-size: 20px;
+}
+.enterMemoInfo .linkList {
+  margin: 36px 0;
+}
+select::-ms-expand {
+  display: none;
+  /* hide the default arrow in ie10 and ie11 */
+}
+.reenterLabel {
+  padding-top: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  font-family: 'LloydsBankJackMedium', Helvetica, Arial, sans-serif;
+  color: #505050;
+  line-height: 24px;
+  margin-top: 18px;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+#headerInner {
+  text-align: center;
+  color: #323233;
+  margin-top: 16px;
+}
+/* Tooltip for remember user name */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #006a4d;
+  color: #fff;
+  font-family: 'LloydsBankJackLight', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 3px;
+  padding: 6px 0;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.tooltip .tiptext::after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+}
+.tooltip:hover .tiptext {
+  visibility: visible;
+}
+.tooltip.top .tiptext {
+  margin-left: -60px;
+  bottom: 150%;
+  left: 50%;
+}
+.tooltip.top .tiptext::after {
+  margin-left: -5px;
+  top: 100%;
+  left: 50%;
+  border-color: #006a4d transparent transparent transparent;
+}
+/* Marketing banner border */
+.appBannerBG .marketing {
+  border-top: 1px solid #bfbfbf;
+  padding-top: 16px;
+}
+.cancelLink {
+  text-decoration: none;
+}
+.market {
+  border-top: 1px solid #EAEAEA;
+  padding-top: 16px;
+}
+#lnkCancel {
+  text-decoration: none !important;
+}
+.fscsLogo {
+  text-align: center;
+}
+.blockLink {
+  text-decoration: none !important;
+}
+#lnkCancel {
+  text-decoration: none !important;
+}
+.fscsLogo {
+  text-align: center;
+}
+.blockLink {
+  text-decoration: none !important;
+}
+/* Incompatible browser err design */
+.msgTLBrowser,
+.msgTRBrowser,
+.msgBRBrowser,
+.msgBLBrowser {
+  background: none;
+}
+.headerMsgErr {
+  color: #323233;
+  font-family: 'LloydsBankJackLight', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 42px;
+  padding-left: 18px;
+}
+.msgErrorBrowser {
+  margin: 0 0 7px;
+  background: url(../img/message_types/browser_error.png) 24px 32px no-repeat;
+  background-size: 26px 24px;
+  background-color: #FFF7E8;
+  border-width: 1px 0;
+  margin-left: 18px;
+  margin-bottom: 30px;
+  margin-right: 18px;
+}
+.msgBLBrowser p {
+  color: #505050;
+  font-family: 'LloydsBankJackLight', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  padding-left: 72px;
+  padding-top: 4px;
+  padding-right: 12px;
+}
+.panelInner .msgErrorBrowser {
+  margin-top: 4px;
+}
+.msgBLBrowser a {
+  color: #006a4d;
+  font-family: 'LloydsBankJackLight', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.dividerBrowser {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.mainContent {
+  display: none;
+}
+.backToHomepage {
+  margin-top: 30px;
+  text-align: center;
+}
+/* End Incompatible browser err design */
+.spinnerLoad {
+  background: url(../img/icons/spinner.gif) no-repeat;
+  height: 55px;
+  width: 55px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 230px;
+  margin-bottom: 230px;
+}
+/* Capture memorable information starts*/
+.captureMemorableInfo .pageHeading {
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.captureMemorableInfo .listCopy {
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+.captureMemorableInfo .captureMiList {
+  margin-top: 8px;
+}
+.captureMemorableInfo .captureMiList li {
+  font-family: 'LloydsBankJackLight', Helvetica, Arial, sans-serif;
+}
+.captureMemorableInfo a {
+  padding-left: 16px;
+}
+.captureMemorableInfo .formPanel {
+  border-bottom: 1px solid #BFBFBF;
+  margin-bottom: 20px;
+}
+.captureMemorableInfo .formPanelInner {
+  margin-bottom: 30px;
+}
+#captureMemorableInfo .formField {
+  margin-top: 30px;
+  padding-right: 8px;
+  margin-bottom: 30px;
+}
+/* Style used to open and close the accordion panel for activation code starts */
+.activationCode {
+  cursor: pointer;
+  width: 100%;
+  transition: 0.4s;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #006a4d;
+  background-color: white;
+  font-family: 'LloydsBankJackLight', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  border-top: 1px solid #EFEDEA;
+  border-bottom: 1px solid #EFEDEA;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-left: white;
+  border-right: white;
+  text-align: left;
+  background: url("../img/link_types/chevron_down_sca.png") no-repeat;
+  background-position: right;
+}
+/* Style the accordion panel. Note: hidden by default */
+.contentData {
+  overflow: hidden;
+  display: none;
+  color: #333333;
+  font-family: 'LloydsBankJackLight', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  border-left: white;
+  border-right: white;
+}
+.enterActivationCode .formField {
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 5px;
+}
+.activationCode.active {
+  background: url("../img/link_types/chevron_up_sca.png") no-repeat;
+  background-position: right;
+}
+.enterActivationCode.alignHeader {
+  margin-left: 10px;
+}
+.enterActivationCode .actions {
+  margin-top: 60px;
+}
+/* end of activation code page changes */
+p.sudoLabel.labelText {
+  margin-top: 30px;
+  padding-left: 16px;
+  color: #505050;
+  font-weight: bold;
+}
+.memorableInfo.inputLabel {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.cancelLinkSca {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline;
+  font-size: 18px;
+  font-family: 'LloydsBankJackLight', Helvetica, Arial, sans-serif;
+}
+.reenterLabel {
+  padding-top: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+#frmReorderActivationCode:btnSubmit {
+  background-color: #ffffff !important;
+}
+/* Show hide feature */
+.formPasswordWrap {
+  display: block;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #767676;
+  margin-top: 7px;
+  padding-right: 8px;
+}
+.formPasswordWrap input[type='password'],
+.formPasswordWrap input[type='text'] {
+  border: none;
+  width: 83%;
+  margin-top: 0;
+  padding: 0;
+  display: inline-block;
+  outline: none;
+  cursor: text;
+  padding-left: 5px;
+}
+@media (max-width: 320px) {
+  .formPasswordWrap input[type='password'],
+  .formPasswordWrap input[type='text'] {
+    width: 80%;
+  }
+}
+.formPasswordWrap a {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'LloydsBankJackMedium', Helvetica, Arial, sans-serif;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.formPasswordWrap:focus-within {
+  -moz-outline-radius: 5px;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+.formPassword::-ms-reveal,
+.formPassword::-ms-clear {
+  display: none;
+}
+/* End of Show hide feature */
+/*Lloyds font enabled ltsb gloabl font*/
+@font-face {
+  font-family: 'Lloyds Jack Light';
+  src: url('../fonts/LloydsBankJackLight/lloyds_bank_jack-lightWEB.eot');
+  src: url('../fonts/LloydsBankJackLight/lloyds_bank_jack-lightWEB.eot?#iefix') format('eot'), url('../fonts/LloydsBankJackLight/lloyds_bank_jack-lightWEB.woff') format('woff'), url('../fonts/LloydsBankJackLight/lloyds_bank_jack-lightWEB.ttf') format('truetype'), url('../fonts/LloydsBankJackLight/lloyds_bank_jack-lightWEB.svg#webfontJlnRxpun') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lloyds Jack Italic';
+  src: url('../fonts/LloydsBankJackItalic/lloyds_bank_jack-italicWEB.eot');
+  src: url('../fonts/LloydsBankJackItalic/lloyds_bank_jack-italicWEB.eot?#iefix') format('eot'), url('../fonts/LloydsBankJackItalic/lloyds_bank_jack-italicWEB.woff') format('woff'), url('../fonts/LloydsBankJackItalic/lloyds_bank_jack-italicWEB.ttf') format('truetype'), url('../fonts/LloydsBankJackItalic/lloyds_bank_jack-italicWEB.svg#webfontJlnRxpun') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lloyds Jack Medium';
+  src: url('../fonts/LloydsBankJackMedium/lloyds_bank_jack-mediumWEB.eot');
+  src: url('../fonts/LloydsBankJackMedium/lloyds_bank_jack-mediumWEB.eot?#iefix') format('eot'), url('../fonts/LloydsBankJackMedium/lloyds_bank_jack-mediumWEB.woff') format('woff'), url('../fonts/LloydsBankJackMedium/lloyds_bank_jack-mediumWEB.ttf') format('truetype'), url('../fonts/LloydsBankJackMedium/lloyds_bank_jack-mediumWEB.svg#webfontJlnRxpun') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lloyds Jack Bold';
+  src: url('../fonts/LloydsBankJackBold/lloyds_bank_jack-boldWEB.eot');
+  src: url('../fonts/LloydsBankJackBold/lloyds_bank_jack-boldWEB.eot?#iefix') format('eot'), url('../fonts/LloydsBankJackBold/lloyds_bank_jack-boldWEB.woff') format('woff'), url('../fonts/LloydsBankJackBold/lloyds_bank_jack-boldWEB.ttf') format('truetype'), url('../fonts/LloydsBankJackBold/lloyds_bank_jack-boldWEB.svg#webfontJlnRxpun') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* BOS Avenir LT PRO - Normal
+--------------------------------------- */
+@font-face {
+  font-family: 'AvenirNxtPro';
+  src: url('../fonts/AvenirNextLTW02-Regular.eot');
+  src: url('../fonts/AvenirNextLTW01-Regular.woff') format('woff'), url('../fonts/AvenirNextLTW02-Regular.svg') format('svg'), url('../fonts/AvenirNextLTW02-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Hfax agendaBold - Normal
+--------------------------------------- */
+@font-face {
+  font-family: 'agendaBold';
+  src: url('../fonts/AgendaW01-Bold.eot');
+  src: url('../fonts/AgendaW01-Bold.woff') format('woff'), url('../fonts/AgendaW01-Bold.svg') format('svg'), url('../fonts/AgendaW01-Bold.ttf') format('ttf'), url('../fonts/Agenda-Bold.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'agendaRegular';
+  src: url('../fonts/AgendaW01-Regular.woff') format('woff'), url('../fonts/AgendaW01-Regular.ttf') format('ttf'), url('../fonts/Agenda-Regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+select#formMem1,
+select#formMem2,
+select#formMem3 {
+  background-size: 16px;
+}
+@font-face {
+  font-family: 'LloydsBankJackLight';
+  src: url('../fonts/lloyds_bank_jack-lightWEB.eot');
+  src: url('../fonts/lloyds_bank_jack-lightWEB.eot?#iefix') format('eot'), url('../fonts/lloyds_bank_jack-lightWEB.woff') format('woff'), url('../fonts/lloyds_bank_jack-lightWEB.ttf') format('truetype'), url('../fonts/lloyds_bank_jack-lightWEB.svg#webfontJlnRxpun') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LloydsBankJackNormal';
+  src: url('../fonts/lloyds_bank_jack-regularWEB.eot');
+  src: url('../fonts/lloyds_bank_jack-regularWEB.eot?#iefix') format('eot'), url('../fonts/lloyds_bank_jack-regularWEB.woff') format('woff'), url('../fonts/lloyds_bank_jack-regularWEB.ttf') format('truetype'), url('../fonts/lloyds_bank_jack-regularWEB.svg#webfontJlnRxpun') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LloydsBankJack';
+  src: url('../fonts/LloydsBankJackWeb-Regular.eot');
+  src: url('../fonts/LloydsBankJackWeb-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LloydsBankJackMedium';
+  src: url('../fonts/LloydsBankJackMedium/lloyds_bank_jack-mediumWEB.eot');
+  src: url('../fonts/lloyds_bank_jack-mediumWEB.eot?#iefix') format('eot'), url('../fonts/lloyds_bank_jack-mediumWEB.woff') format('woff'), url('../fonts/lloyds_bank_jack-mediumWEB.ttf') format('truetype'), url('../fonts/lloyds_bank_jack-mediumWEB.svg#webfontJlnRxpun') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}

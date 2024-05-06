@@ -1,0 +1,1901 @@
+/*
+-----------------------------------------------
+Galaxy IB - SCA Login CSS: Base
+----------------------------------------------- */
+
+/* Suggested rule structure
+ * 
+ * display/visibility:
+ * position:
+ * z-index:
+ * top:
+ * right:
+ * bottom:
+ * left:
+ * float:
+ * clear:
+ * width:
+ * height:
+ * margin:
+ * padding:
+ * overflow:
+ * list-style:
+ * font..:
+ * line-height:
+ * text-align:
+ * colour:	
+ * border:
+ * background:
+----------------------------------------------- */
+
+
+html,body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+body {
+	min-width: 651px; /* For Gecko */
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 62.5%;
+	text-align: center;  /*Centre content for IE5 */
+	color: #323233;
+	background: #FFF;
+	word-wrap: break-word;
+}
+
+p {
+	font-family: 'Lloyds_Jack_Light', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+/* Special formatting (inc. mini Reset)
+---------------------------------------*/
+body { 
+	line-height: 1.3; 
+}
+a img { 
+	border: 0; 
+}
+fieldset, form, legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Mobile - prevent mobile browsers adjuting font sizes
+---------------------------------------*/
+@media screen and (max-device-width: 480px) {   
+	/* Prevent iOS, WinMobile from adjusting font size */
+	html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
+}
+
+/* Header
+---------------------------------------*/
+#header {
+	position: relative;
+	min-height: 90px; /* fix for ie6 */
+	margin: 0;
+	padding: 0 0 0 390px;
+	border-top: 0;
+}
+
+/*begin logo check*/
+#header p#logo span img {
+	display:block;
+	visibility: hidden;
+}
+/*end logo check*/
+/* logged in */
+#header div.loggedIn {
+	float: right;
+	padding: 11px 0 0 0;
+	color: #FFF;
+	font-size: 1.2em;
+	text-align: right;
+}
+#header div.loggedIn a,
+#header div.loggedOut a,
+#header ul.loggedHeaderLinks li a {
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+#header div.loggedIn a:hover,
+#header div.loggedOut a:hover,
+#header ul.loggedHeaderLinks li a:hover { 
+	text-decoration: underline; 
+}
+
+/* amended for GALAXY-9095 - the link for the cookie is coming from the CMS where only 1 CSS class name can be assigned (anchor can have the newwin class) */
+#header ul.loggedHeaderLinks li a.linkBullet,
+#header ul.loggedHeaderLinks li.cookie a {
+	padding-left: 16px;
+	background: url(../img/icons/arrow_lo.png) 0 0 no-repeat;
+	font-size:1.2em;
+}
+
+/* logged in links */
+#header div.loggedIn ul,
+#header div.loggedOut ul  {
+	margin: 0 0 1.2em 0;
+	padding: 0;
+	list-style-type: none;
+}
+#header div.loggedIn ul li,
+#header div.loggedOut ul li {
+	display: inline;
+	margin-left: 10px;
+}
+#header div.loggedIn ul li.viewOnly { /* fix for ie6 */
+	padding-left: 19px;
+	background: transparent url(../img/icons/view_only.png) 0 1px no-repeat;
+}
+#header div.loggedIn ul li.secure { /* fix for ie6 */
+	padding-left: 19px;
+	background: url(../img/icons/padlock_header.png) 0 -1px no-repeat;
+}
+
+#header ul.loggedHeaderLinks {
+	float:right;
+	list-style-type: none;
+	margin-right:10px;
+}
+
+#header ul.loggedHeaderLinks li {
+	display: inline;
+	margin-left: 10px;
+}
+
+/* logged in user and logout button */
+#header div.loggedIn p.user {
+	margin: 0;
+}
+#header div.loggedIn p.user span.name {
+	font-size: 1.7em;
+	font-weight: bold;
+	display:inline-block;
+	padding-top:2px;
+	vertical-align:top;
+}
+#header div.loggedIn p.user a.logout { /* fix for ie6 and ie7 */
+	margin: 0 0px 0 8px;
+	display:inline-block;
+	width:75px;
+	height:25px;
+	padding-top:2px;
+}
+
+/* logged out */
+#header div.loggedOut { /* fix for ie6 */
+	min-height:77px;
+	min-width:307px;
+	float: right;
+	padding:13px 0 0;
+	color: #FFF;
+	font-size: 1.2em;
+	text-align: right;
+}
+#header div.loggedOut p.msg {
+	margin: 0;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+#header div.loggedOut p.login {
+	margin: 1.2em 0 0 -2px;
+}
+
+#header div.loggedOut ul li.informational {
+	padding-left:12px;
+	border-left:1px solid #fff;
+}
+
+#header .secureMsg p.msg {
+	min-height: 16px;
+	margin: 0;
+	padding: 5px 0 0 35px;
+	font-size: 1.6em;
+	background: url(../img/padlock.png) 4% 0 no-repeat;
+	background-size: 13px;
+}
+
+/* Generic Copy styles
+---------------------------------------*/
+.floatRight { float: right; }
+.floatLeft { float: left; }
+.noFloat {float: none !important;}
+
+.noMargin { margin: 0 !important; }
+.noPadding { padding: 0 !important;}
+.no-wrap { white-space: nowrap; }
+.noBold { font-weight: normal !important;}
+a { 
+	color: #006A4D;
+	font-weight: normal;
+	text-decoration: underline; 
+}
+a:hover { 
+	text-decoration: underline; 
+}
+strong { 
+	font-weight: bold; 
+}
+.content em {
+	font-weight: bold;
+	font-style: normal;
+}
+.content .tillReceipt .part table td em {
+	color: #663399;
+}
+.content p, .content ul, ol, dl, table, address, blockquote {
+	margin: 0 0 1em 0;
+}
+
+.content p, .content li, .content dt, .content dd, .content blockquote, 
+.content pre, .content address, .content label, .content th, .content td, .content code { 
+	font-size: 16px; 
+	line-height: 1.4em;
+}
+
+.content p.last {
+    margin-bottom: 0;
+}
+.content p.fllwdByRadio {
+	margin-bottom: 0.3em;
+}
+.content th label, 
+.content td label {
+	font-size: 1em;
+	line-height: 1.2em;
+}
+.content p.intro {
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #323233;
+}
+
+.content .titleBar {
+	padding-top:4px;
+	padding-bottom:4px;
+	margin-bottom:20px;
+}
+
+.content .titleBar  h1{
+	margin-bottom:10px;
+}
+
+.content .titleBar  h2 {
+	padding: 0 0 0 10px;
+	margin-bottom:10px;
+	font-size: 2.4em;
+    font-weight: normal;
+}
+
+.content .titleBar  p ,
+.content .titleBarNoDash  p {
+	padding: 0 0 0 12px;
+}
+
+.content h1, 
+.content h2, 
+.content h3,
+.content h3.subHead, 
+.content h4 { 
+	margin: 0 0 .9em 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #323233;
+}
+.content h3.subHead {
+	color: #323233;
+	font-size: 1.4em;
+}
+.content h1 { 
+	margin: 0 0 .7em 0;
+	padding: .5em 10px 0;
+	font-size: 2.4em;
+	font-weight: normal;
+	color: #323233;
+}
+.content .inner h1 { 
+	padding-left: 0;
+	padding-right: 0;
+}
+.content h2 {
+	color: #006A4D;
+	font-size: 1.8em;
+	font-weight: normal;
+}
+.content h3,
+.content h4 {
+	color: #323233;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+.content h4 {
+	font-size: 1.2em;
+}
+.content h4.subHead, 
+.content p.pseudoHead { 
+	font-size: 1.8em;
+	font-weight: normal;
+	color: #323233;
+}
+
+.content .pullOut h2, 
+.content .pullOut h3.subHead, 
+.content .pullOut h4.subHead,
+.content .pullOut p.pseudoHead{
+	font-size: 1.2em;
+	color:#323233;
+	font-weight:bold;
+}
+.content .pullOut p strong{
+	color:#323233;
+}
+.content .pullOut p{
+	color:#323233;
+}
+.content h2.bigHead{
+	margin: 0 0 0.5em;
+	/*padding: 0.5em 0 0;*/
+	font-size:1.8em;
+	font-weight: normal;
+	color: #663399; 
+}
+.content .dashGrad h2.bigHead {
+	margin: 0 0 0.7em;
+	padding: 0;
+}
+.content h2.biggerHead {
+	margin-bottom: 0.4em;
+	font-size: 2em;
+}
+
+.content h2.payeeHead {
+	font-size: 1.2em;
+	color: #323233;
+}
+
+.content h2.productHead,
+.content h3.productHead {
+	margin: 0 0 0.7em;
+	color: #323233;
+	font-size: 2em;
+	font-weight: normal;
+}
+.content .subPanel .productSummary + ul.linkList + h3 {
+	clear: both;
+}
+.content h2.productHead + p strong{
+	font-size:1.2em;
+	font-weight: normal;
+}
+.content h2.productHead span.preHead {
+	display: block;
+	font-size: 0.7em;
+	font-weight: bold;
+	color: #323233;
+}
+.shareDealing h2.productHead {
+	margin-top: 0.3em;
+}
+
+.content h2 .preHead {
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	color: #323233;
+}
+.content .accountUpgrade h2 .preHead {
+	font-weight: normal;
+}
+
+.pageWrap .content h2 span,
+.content h2.bigHead span {
+	color: #323233;
+	font-weight:bold;
+}
+.content h2.productHead span,
+.content h3.productHead span {
+	font-size: 0.6em;
+	font-weight: normal;
+	color: #323233;
+}
+
+.content h3.subHead span {
+	font-size: 0.9em;
+	font-weight: normal;
+	color: #323233;
+}
+
+.content h2.partHead {
+	font-size: 1.6em;
+	font-weight: bold;
+}
+.content h2.partHead span {
+	display: block;
+	padding-top: 1em;
+	font-weight: bold;
+	color: #323233;
+}
+.content h2.partHead.noPrimary {
+	padding-top: 2.55em;
+	font-size: 1.4em;
+	color: #323233;
+}
+.content h2.smallHead {
+	font-size: 1em;
+	color: #323233;
+}
+.content h2 span {
+	font-size: 0.9em;
+}
+.content h3 { 
+	font-size: 1.4em; 
+	color: #323233;
+}
+.content h4 { 
+	font-size: 1.2em; 
+}
+
+.content li h2 {
+	font-size: 1.2em;
+}
+.content li h3 {
+	font-size: 1em;
+}
+.content .comparisonSelectList li.comparisonSelectItem h3 {
+	font-size: 1.4em;
+}
+
+.content .solidDividerLower h2.bigHead {
+	padding-top: 0;
+}
+
+.content h2.small, 
+.content h3.small, 
+.content h4.small {
+	font-size: 15px;
+	font-weight: bold;
+	color: #505050;
+}
+
+.secondary {
+    position: relative;
+    float: right;
+    width: 300px;
+    margin: 0px 0 1em 0;
+}
+
+.secondary .subPanel h2 {
+	margin-bottom: .6em;
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #006A4D;
+}
+.content .secondary h2.iconHead {
+	position: relative;
+	margin-bottom: .7em;
+	padding: 0 32px 0 0;
+	font-weight: bold;
+}
+.content .secondary .showHide h2.iconHead {
+	padding: 0;
+}
+.content .secondary h2.iconHead img { /* fix for ie6 */
+	position: absolute;
+	top: -2px;
+	left: -2px; /* fix for ie6 */
+	width: 20px;
+	height: 19px;
+}
+
+
+/* financial terms table (50% width) - P39.09.01 Sign CCA Page */
+.content table.financialTerms {
+	width: 50%;
+}
+.content table.financialTerms thead th.first {
+	width: 65%;
+}
+
+/* Link list
+---------------------------------------*/
+.content ul.linkList { /* fix for ie */
+	margin-bottom: 1em;
+}
+.content ul.linkList li { /* fix for ie6 */
+	margin-bottom: .5em;
+	padding: 0;
+	font-weight: bold;
+	background: transparent;
+}
+
+.content .primary .panel .inner .sidePane ul.linkList li {
+	display: inline;
+}
+.content div.submitActions + ul.linkList {
+	margin-top: 1em;
+}
+.content ul.linkList li .inner {
+	font-weight:normal;
+}
+.content ul.linkList li span.unemphasized { 
+	font-weight: normal;
+}
+.secondary ul.linkList li {
+	font-weight: normal;
+}
+.enterOTP ul.linkList{
+	margin-bottom:-4px;
+	margin-top:10px;	
+}
+.content ul.linkList li.footLink {
+	padding: 0.8em 0 0 0;
+	margin: 0.8em 0 0 0;
+	border-top: 1px solid #e7ebf2;
+}
+.content ul.linkList li a { /* fix for ie6 */
+	display: inline-block;
+	/* padding: 0 0 0 22px; */
+	text-decoration: none;
+	color: #323233;
+	min-height:16px; /* fix for cropping in safari 2 */
+	font-family: 'Lloyds_Jack_Medium', Arial, Helvetica, sans-serif;
+}
+.content ul.linkList li a:hover {
+	text-decoration: underline;
+}
+.content ul.linkList li.primaryAction a {
+	padding-left: 0!important;
+	background: none;
+}
+
+/* GALAXY-8292 */
+.content ul.actions li.primaryAction a.linkBullet  {
+	padding-top: 3px;
+    background: url(../img/icons/arrow.png) 0 5px no-repeat;
+	padding-right: 10px;
+}	
+
+.content .secondary ul.linkList li a {
+	display: -moz-inline-block; /* for FF2 */
+}
+.content ul.linkList li span.cxtHelp a {
+	padding: 0;
+	background: none;
+}
+.content ul.linkList.icons {
+	background-color: transparent;
+}
+.content ul.linkList.icons li {
+	margin-bottom: 0;
+}
+.content ul.linkList li span.inlineHelp{
+	font-weight: normal;
+}
+
+.hasJS .content ul.linkList.icons li a {
+	display: -moz-inline-block !important; /* for FF2 */
+}
+/*.hasJS .content ul.linkList.icons li a.cxtTrigger {
+	display: inline !important; /* for FF2 -/
+}*/
+
+.content ul.linkList.icons li a {
+	padding-left: 23px;
+	line-height: 2em;
+	background-position: 0 6px;
+}
+.content ul.linkList.icons li a:hover {
+	text-decoration: underline;
+}
+.content ul.linkList li .previous,
+.content ul.linkList li .back {
+	background: transparent url(../img/icons/arrow_left.png) 0 2px no-repeat;
+}
+.content ul.linkList li .cancel {
+	background: url(../img/icons/cross.png) 0 2px no-repeat;
+}
+.content ul.linkList.icons li .pdf {
+	background: transparent url(../img/icons/pdf.png) no-repeat scroll 0 3px;
+}
+.content ul.linkList.icons li .print {
+	background: transparent url(../img/icons/print.png) no-repeat scroll 0 3px;
+}
+.content p > a.print {
+	background: transparent url(../img/icons/print.png) no-repeat scroll 0 3px;
+	clear: left;
+	padding-left: 23px;
+	line-height: 2em;
+}
+.content ul.linkList.icons li .printFriendly {
+	background: transparent url(../img/icons/print.png) no-repeat scroll 0 3px;
+}
+.content ul.linkList.icons li .export {
+	background: transparent url(../img/icons/export.png) no-repeat scroll 4px 3px;
+}
+.content ul.linkList.icons li .search {
+	background: transparent url(../img/icons/search.png) no-repeat scroll 2px 3px;
+}
+.content ul.linkList.icons li .exclamationMark {
+	background: transparent url(../img/icons/exclamation_mark.png) no-repeat scroll 0px 2px;
+}
+.content ul.linkList.icons li .circleGreenTick {
+	background: transparent url(../img/icons/green_circle_tick.png) no-repeat scroll 2px 5px;
+}
+/*.content ul.linkList.icons li .circleHalfGreen {
+	background: transparent url(../img/icons/circle_half_green.png) no-repeat scroll 2px 5px;
+}*/
+.content ul.linkList.icons li .directDebit {
+	background: transparent url(../img/icons/direct_debit.png) no-repeat scroll 2px 7px;
+}
+.content ul.linkList.icons .success {
+	background: transparent url(../img/icons/tick.png) no-repeat scroll 0 2px;
+}
+
+
+
+/*  Paperless Treatment Strategy nav module */
+.content ul.multitype.pts li em{
+	font-weight:normal;
+}
+.content ul.multitype.pts li{
+	border-left:0px !important;
+}
+.content ul.multitype.pts_right li{
+	border-left:0px !important;
+}
+
+.content ul.multitype.pts_right{
+	float:right !important; 
+	display:inline;
+}
+.content ul.linkList.pts li.ptson {
+	background: transparent url(../img/icons/tick.png) no-repeat scroll 0 3px;
+	padding-left:16px;
+	border-left:0px;
+}
+.content ul.linkList.pts li.ptsoff {
+	background: transparent url(../img/icons/cross_mark.png) no-repeat scroll 0 3px;
+	padding-left:16px;
+	border-left:0px;
+}
+/* End:  Paperless Treatment Strategy nav module */
+
+
+
+
+.content th ul.linkList {margin-top: 5px;}
+.content th .help ul.linkList {margin-top: 10px;}
+.content ul.linkList li span.note,
+.content th ul.linkList li {
+	font-weight: normal;
+}
+.content ul.linkList li span.note { 
+	position: relative; 
+	/*top: -8px;*/
+}
+.content th ul.linkList li {font-size: 1em;}
+.content ul.linkList li h3 a {
+	padding: 0;
+	background: none;
+}
+.content ul.linkList li a:hover {
+	text-decoration: underline;
+}
+
+.content ul.linkList span {
+	display: inline-block;
+	font-weight: normal;
+}
+
+/* Defect 25801 */
+.subPanel.smartRewards ul.linkList li span {
+	background: url("../img/icons/arrow_inactive.png") no-repeat scroll 0 4px transparent;
+	padding-left: 23px;
+}
+
+.subPanel.smartRewards ul.linkList li span.cxtHelp {
+	background: none;
+	padding-left: 0;
+}
+/* Defect 25801 end */
+
+.content ul.linkList li ul {
+	margin-top: .5em;
+	margin-left: 22px;
+}
+.content ul.linkList li ul.actions { /*BUG 42043*/
+	margin-left:0;
+}
+.content ul.linkList li .help ul.linkList {
+	float: none;
+	margin-left: 0;
+	padding: 0;
+}
+.content ul.linkList li .help ul.linkList li a {
+	padding-left: 22px;
+	background: url(../img/icons/arrow.png) 0 2px no-repeat;
+}
+.content .productPromo.hyperlink ul.linkList li a { /* fix for ie6 */
+	background: url(../img/icons/arrow_hi.png) 0 2px no-repeat;
+}
+/* used on P39.08 */
+.colLayout.cols2WideLeft .colPart + .colPart ul.linkList {
+	margin-top: -0.4em;
+}
+/* 09/04/2012 */
+.content .infoMessage ul.linkList li p {
+	display: inline-block; 
+	padding-right: 0 !important;
+	font-weight: normal;
+	margin-bottom: 0;
+	width: 49% !important; 
+}
+.content .infoMessage ul.linkList li p.textLink {
+	float: right;
+	font-weight: bold;
+	clear: left; 
+	text-align: right; 
+}
+.content .infoMessage ul.linkList {
+	margin-bottom: 0;
+	padding-bottom: 0.8em;
+}
+.content .infoMessage ul.linkList li p.textLink {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 36% !important;
+}
+.content .infoMessage ul.linkList li {
+	position: relative;
+	clear: both;
+	margin-bottom: 0;
+	min-height: 26px;
+}
+.content .infoMessage ul.linkList li p.textLink a {
+	float: right;
+	text-align: right;
+}
+
+.content .infoMessage a {
+	text-decoration:underline; /*GALAXY 23070*/
+}
+
+/* Secondary quick links amends
+-------------------------------------- */
+.content .secondary ul.linkList.noMargin {
+	margin: 0;
+}
+
+/* important - ensure that the default link list styles are amend BEFORE the quicklinks overrides */
+.content .secondary ul.linkList li {
+	margin: 0 0 0.3em;
+	padding: 0; /* fix for all ie - moz and webkit overrides below */
+}
+.content .secondary ul.linkList li a {
+	background-position: 0 2px;
+}
+.content .secondary ul.linkList li.footLink {
+	margin: 0.4em 0 0;
+	padding: 0.8em 0 0;
+}
+/* firefox amends - spacing added when display:inline-block added to anchors */
+@-moz-document url-prefix() {
+	.content .secondary ul.linkList li {
+		margin-bottom: 0;
+		padding: 0 0 0.4em;
+	}
+}
+/* webkit amends */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.content .secondary ul.linkList li {
+		padding: 0 0 0.4em;
+	}
+}
+
+/* Quick links
+-------------------------------------- */
+/* important - the quicklinks inherits and overrides the default link list styles  */
+
+/* showHide heading */
+.content .secondary .quickLinks h2,
+.content .secondary .quickLinks h2 a,
+.content .secondary .quickLinks h2 a:hover {
+	position: relative;
+	display: block;
+	padding: 0;
+	color: #323233;
+	text-decoration: none;
+}
+.content .secondary .quickLinks h2 a span.toggle {
+	position: absolute;
+	right: -1px !important;
+	left: auto;
+	top: 4px;
+}
+.content .secondary .quickLinks h2.iconHead a span.toggle {
+	top: 4px;
+}
+.content .secondary .quickLinks.showHide.closed h2,
+.content .secondary .quickLinks.showHide.closed h2 a,
+.content .secondary .quickLinks.showHide.closed h2 a:hover {
+	color: #663399;
+}
+
+/* showHide panel content */
+.content .secondary ul.quickLinks:last-child {
+	margin-bottom: 0;
+}
+.content .secondary ul.quickLinks li {
+	width: 130px;
+	float: left;
+}
+.content .secondary ul.quickLinks li h3,
+.content .secondary ul.quickLinks li ul,
+.content .secondary ul.quickLinks li ul li {
+	width: 125px;
+}
+.content .secondary ul.quickLinks li h3 {
+	margin: 0 0 0.4em;
+	font-size: 1.1em;
+}
+.content .secondary ul.quickLinks li h3, 
+.content .secondary ul.quickLinks li h3 a {
+	color: #002776;
+}
+.content .secondary ul.quickLinks li ul {
+	margin-left: 0;
+}
+.content .secondary .quickLinks .linkHeading a {
+    background: url(../img/icons/arrow.png) no-repeat 0 2px transparent !important;
+    font-size: 1em;
+}
+.content ul.linkList.quickLinks li.linkSubHeading a,
+.content ul.linkList.quickLinks li.linkSubHeadingHighlight a {
+    font-weight: normal;
+}
+
+/* Link styles
+---------------------------------------*/
+.content a.linkBullet { /* fix for ie6 */
+	margin: 0 0 0 1em;
+	padding: 0 0 0 20px;
+	text-decoration: none;
+	font-weight:bold;
+	color: #323233;
+	background: url(../img/icons/arrow.png) 0 1px no-repeat;
+}
+
+.content a.linkBullet.pdf { 
+	background:url(../img/icons/pdf.png) no-repeat 0 3px; 
+	line-height: 2em; 
+	padding-left:23px;
+	display: inline-block;
+}
+
+.content a.linkBullet.selectAccount {
+	margin-left: 0;
+}
+
+.content a.linkBullet:hover {
+	text-decoration: underline;
+}
+.content .supportingInfo a.linkBullet,
+.content .addressMsg .linkBullet { 
+	margin-left: 0;
+}
+
+.content .productSummary dd .linkBullet {
+	display: block;
+	margin: 0.4em 0 0.7em;
+}
+
+.content a.pdfLink { /* fix for ie6 */
+	padding: 3px 0 2px 25px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #323233;
+	background: url(../img/icons/pdf.png) 0 0 no-repeat;
+}
+.content a.pdfLink:hover {
+	text-decoration: underline;
+}
+
+.content ul.buttonLink li {
+	margin-left: -2px;
+	padding: 0;
+	background: none;
+}
+.content table ul.buttonLink {
+	margin: 0;
+}
+.content table ul.buttonLink li {
+	margin: 0 0 -5px;
+}
+
+.content ul.buttonLinkInline {
+	margin: .5em 0 0 0;
+}
+.content ul.buttonLinkInline li {
+	float: right;
+	margin: 0 0 0 15px;
+	padding: 0;
+	background: none;
+}
+
+.content .buttonLink {
+	margin: 0 0 1.4em -1px;
+	padding: 0;
+}
+
+.content .batchDetails .buttonLink {
+	text-align:right;
+}
+
+/* class to add to elements that become dynamically clickable */
+.content .linkPointer{
+	cursor:pointer;
+}
+
+/* Check list
+---------------------------------------*/
+.content ul.checkList li {
+	padding-left: 24px;
+	background: transparent;
+}
+.content ul.checkList li img.checkMark {
+	position: relative;
+	left: -24px;
+	top: 1px;
+	margin-right: -14px;
+}
+
+/* Decal
+---------------------------------------*/
+.content img.decal {
+	display: block;
+	float: right;
+	margin: 44px 0 1em 2em;
+}
+
+/* Print Link
+---------------------------------------*/
+.content .print,
+.content ul.linkList li a.print,
+.content ul.linkList li a.printwin,
+.persaonalLoanWinBack .supportingInfo ul.linkList li a   {
+	display: none !important;
+}
+.hasJS .content .print,
+.hasJS .content ul.linkList li a.print, 
+.hasJS .persaonalLoanWinBack .supportingInfo ul.linkList li a {
+	display: -moz-inline-block !important;
+	display: inline-block !important;
+}
+
+.hasJS .content p > a.print {
+	display: table-cell !important;
+}
+.hasJS .content ul.linkList li a.printwin {
+    display: inline-block !important;
+}
+/* Back Link
+---------------------------------------*/
+.content a.back,
+.content ul.linkList li.back a,
+.content ul.actions li.back a {
+	padding: 0 0 0 20px;
+	text-decoration: none;
+	background: url(../img/icons/arrow_left.png) 0 2px no-repeat;	
+}
+.content a.back:hover,
+.content ul.linkList li.back a:hover,
+.content ul.actions li.back a:hover {
+	text-decoration: underline;
+}
+.content ul.actions li.back a {
+	font-weight: bold;
+}
+
+/* Success/failure/warning messages
+---------------------------------------*/
+.content .success {
+	padding: 0 0 0 20px;
+	background: url(../img/icons/tick.png) 0 4px no-repeat;
+}
+.content .failure {
+	padding: 0 0 0 20px;
+	background: url(../img/icons/cross_mark.png) 0 4px no-repeat;
+}
+.content .warning {
+	padding: 3px 0 3px 30px;
+	background: url(../img/icons/alert.png) 0 0 no-repeat;
+}
+.content p.success,
+.content p.failure {
+	padding-top: 0.2em;
+}
+
+/* Full width message
+---------------------------------------*/
+.content .wideMessage {
+	min-height: 322px;
+	padding-top: 142px;
+	text-align: center;
+}
+
+.content .wideMessage h1 {
+	margin-bottom: 0.15em;
+}
+.content .wideMessage strong {
+	font-size: 1.2em;
+	color: #323233;
+}
+
+/* Info message / alert
+---------------------------------------*/
+.content .subtleInfoMessage {
+	margin: 0 20px 1.7em 0;
+	float:right;
+	width:196px;
+}
+
+.content .subtleInfoMessage.encapsulated p{
+	padding:0 !important;
+	margin: 0 0 1em !important;
+}
+
+.content .subtleInfoMessage .infoMessageInner {
+	position: relative;
+	margin-bottom: 3px;
+	padding: 1.2em 15px 1.2em;
+	background: #f8f8f8;
+	
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#fff)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #f8f8f8,  #fff); /* for firefox 3.6+ */
+	
+	
+	border: 1px solid #f8f8f8;
+	border-radius: 6px;	/* Standard */
+	-moz-border-radius: 6px; /* Mozilla */
+	-webkit-border-radius: 6px; /* Webkit */
+}
+
+.content .subtleInfoMessage .infoMessageInner h2 {
+	font-size:1.5em !important;
+	font-weight:bold !important;
+}
+
+.content .infoMessage {
+	clear: both;
+	margin: 0 0 1.7em 0;
+}
+
+/* FATCA Phase 2 */
+.content .infoMessage.taxNumber {
+    width: 60%;
+    clear: left; /* fix for 54041. Overrides clear: both to make browsers consistent; */
+}
+
+.content .infoMessage.taxNumber span.error {
+    margin: 10px 0 0 -10px; /*  fix for 54041. Deals with the error message as it 
+                                flows to the next line due to not enough width */
+}
+
+
+.content div.navBar + .infoMessage.success,
+.content div.navBar + .infoMessage.alert,
+.content div.navBar + div.panelWrap > .infoMessage.success:first-child,
+.content div.navBar + div.panelWrap > .infoMessage.alert:first-child {
+	margin-top: 1em;
+}
+.content .infoMessage + .infoMessage {
+	margin-top: -1px;
+}
+.content .infoMessage.success,
+.content .infoMessage.alert {
+	margin-bottom: 10px;
+}
+.content .infoMessage.success + .inner,
+.content .infoMessage.alert + .inner,
+.content .infoMessage.success + .panel,
+.content .infoMessage.alert + .panel,
+.content .infoMessage.success + form .inner,
+.content .infoMessage.alert + form .inner {
+	margin-top: 1.7em;
+}
+.content .subPanel.highlight > div.inner:first-child {
+	margin-top: 0;
+}
+.content .infoMessage + .inner.dash {
+	background: none!important;
+}
+.content .infoMessage + .accountUpgradeSummary {
+	margin-top: 1.7em;
+}
+.content .infoMessage + .inner.comparisonSelectAction {
+	margin-top: 3em;
+}
+.content .infoMessage + .inner.comparisonSelectAction.compareFirst {
+	margin-top: 2em;
+}
+.content .infoMessage + form .formField:first-child {
+	margin-top: -0.7em;
+}
+.content .infoMessage.success + p.error,
+.content .infoMessage.alert + p.error {
+	margin-top: 1.7em;
+}
+.content .infoMessage .infoMessageInner {
+	margin-bottom:3px;
+	padding:1.2em 10px 0;
+	position:relative;
+	background: #ffffcc no-repeat 14px 12px;
+	border: 1px solid #fff799;	
+}
+.content .infoMessage.nodash {
+	background: none;
+}
+.content .infoMessage.success .infoMessageInner,
+.content .infoMessage.alert .infoMessageInner,
+.colleague_data_holder .infoMessage.alert .infoMessageInner {
+	margin: 0 10px 3px;
+	padding: 0 0 11px;
+	background:#ffffcc url(../img/icons/alert.png) no-repeat scroll 9px 12px;
+	border: 1px solid #fff799;
+	position:relative;
+}
+
+/* BUG_5886 Start */
+.content .infoMessage .infoMessageInner input#btnSavingsRedesignation {
+	float:right;
+}
+/* BUG_5886 End */
+
+.content .infoMessage .grey {
+    background-color: #faf9fe !important
+}
+
+.content .panel .infoMessage.success .infoMessageInner,
+.content .panel .infoMessage.alert .infoMessageInner {
+	margin-left:0;
+	margin-right:0;
+}
+.content .panelWrap .hasButton .infoMessageInner p,
+.content .infoMessage.hasButton .infoMessageInner p {
+	width: auto;
+	padding-right: 210px;
+}
+.content .infoMessage.hasButton p.buttonLink {
+	margin-bottom: 0.4em;
+}
+.content .infoMessage.success p{
+	padding: 0 200px 0 42px;
+	margin: 0 0 0.1em 0;
+}
+.content .infoMessage.alert p {
+	padding: 0 42px 0 42px;
+	margin: 0 0 0.1em 0;
+}
+.content .infoMessage.success h2,
+.content .infoMessage.alert h2 {
+	margin-bottom: 1em;
+	padding: 0 14px 0 45px;
+}
+.content .infoMessage.success ul,
+.content .infoMessage.alert ul {
+	margin: 1em 0;
+	padding: 0 14px 0 45px;
+}
+.content .infoMessage.success p:first-child,
+.content .infoMessage.alert p:first-child,
+.content .infoMessage.success h2:first-child,
+.content .infoMessage.alert h2:first-child {
+	padding-top: 1.2em;
+}
+.content .navBar + .infoMessage.success p:first-child,
+.content .navBar + .infoMessage.alert p:first-child {
+	background: none;
+}
+
+h1 + .infoMessage.success p:first-child,
+h1 + .infoMessage.alert p:first-child,
+h1 + form .infoMessage p:first-child {
+
+}
+
+.content .infoMessage .help p:first-child,
+.content .infoMessage .help h2:first-child {
+	padding: 0;
+	background: none;
+}
+
+.content .hasButton .infoMessageInner p.buttonLink {
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	width: auto;
+	padding: 0;
+}
+.content .infoMessage.smallMessage p.buttonLink {
+	top: auto;
+	bottom: 0;
+	margin-bottom: 8px;
+}
+
+.content .infoMessage .help p {
+	width: 100%;
+}
+.content .infoMessage .help ul {
+	margin-bottom: 0.4em;
+}
+.content .infoMessage .help li {
+	font-size: 1em;
+}
+
+.content .infoMessage ol li {
+	margin-bottom: 0;
+}
+
+.content .infoMessage + ul.actions {
+	margin-top: 0;
+	background: none;
+}
+
+.content p.alert {
+	background: url(../img/icons/alert.png) 0 0 no-repeat;
+	padding: 0.3em 0 0.3em 30px;
+}
+
+.content .infoMessage .cxtHelp .contextual p {
+	width: auto;
+}
+.content .infoMessage .cxtHelp .contextual p.close {
+	width: 12px;
+}
+.content .infoMessage .cxtHelp .contextual ul.linkList {
+	padding-left: 0;
+}
+
+.content .infoMessage.alert.scrollGesture p {
+	padding-right: 10px;
+}
+
+
+/* Success alert
+---------------------------------------*/
+.content .infoMessage.success {
+	padding-left: 0;
+	background: none;
+}
+.content .infoMessage.success .infoMessageInner {
+	background: #ffffcc url(../img/icons/tick.png) no-repeat 10px 16px;
+}
+
+/* Success information message
+---------------------------------------*/
+.content .successInfoMessage {
+	padding: 0.9em 0;
+	margin-bottom: 1.4em;
+}
+.content .successInfoMessage h2.success {
+	margin:0 0 0 10px;
+}
+
+/* Warning information message */
+.content .warningInfoMessage {
+	padding: 0.9em 0;
+	margin-bottom: 1.4em;
+}
+.content .warningInfoMessage h2.warning {
+	color:#323233;
+	font-weight:bold;
+	font-size:1em;
+	margin:0 0 0 10px;
+}
+
+/* Simple error
+---------------------------------------*/
+.content .simpleError {
+	clear: left;
+	margin: 1.7em 15px;
+	padding: .5em 0 0 29px;
+	min-height: 19px;
+	background: transparent url(../img/icons/error.png) no-repeat 0 4px;
+}
+.content .inner .simpleError {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Columns - .last IE6 fix by JS
+---------------------------------------*/
+.colLayout { /* fix for ie */
+	display: block;
+}
+.colLayout:after {
+    display: block;
+    clear: both;
+    height: 0;
+    content: ".";
+    visibility: hidden;
+}
+.colLayout .colPart {
+	float: left;
+	height:100%;
+}
+/* Cols 2 */
+.colLayout.cols2 .colPart {
+	position: relative; /*BUG_55606*/
+	width: 48%;
+}
+.colLayout.cols2 .colPart + .colPart {
+	float: right;
+	margin-right: 0 !important;	
+}
+.colLayout.cols2Narrow .colPart {
+	width: 35%;
+}
+.withPlus{
+	position:relative;
+}
+.withPlus .plus{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 3em;
+	width: 18px;
+	margin:-29px 0 0 -9px;
+	height: 14px;
+}
+
+/* Add plus sign to double column pattern
+---------------------------------------*/
+.includeCenterAsset {
+	background: url("../img/icons/plusSplitCols.gif") no-repeat center center transparent;
+}
+
+/* Cols 2 - including space for asset (plus icon) */
+.panel .colLayout.includeCenterAsset .colPart {
+	width: 45%;
+}
+.panel .colLayout.includeCenterAsset .colPart + .colPart {
+	float: right;
+	margin-right: 0 !important;	
+}
+
+/* Cols 2 - including space for asset (OR text) */
+.includeCenterAsset.txt-or {
+    background: url("../en-gb/images/txt-or.png") no-repeat center center;
+}
+
+/* Cols 2 wide left */
+.colLayout.cols2WideLeft .colPart {
+	width: 56%;
+}
+.colLayout.cols2WideLeft .colPart + .colPart {
+	width: 40%;
+	float: right !important;
+	margin-right: 0 !important;
+}
+.colLayout.cols2WideLeft .colPart + .colPart .decoration {
+	float: right;
+	margin-right: 20px;
+}
+
+.spacing {
+	margin: 0 0 1.2em;
+}
+
+/* Cols 2 widest left */
+.colLayout.cols2WidestLeft .colPart {
+	width: 71%;
+}
+.colLayout.cols2WidestLeft .colPart + .colPart {
+	width: 25%;
+	float: right !important;
+	margin-right: 0 !important;
+}
+.colLayout.cols2WidestLeft ul.linkList {
+	float: right;
+	margin-top: -0.4em;
+	margin-right: 10px;
+}
+.colLayout.cols2WidestLeft ul.linkList,
+.colLayout.cols2WidestLeft ul.linkList li {
+	display: inline;
+}
+
+/* Cols 3 */
+.colLayout.cols3 .colPart {
+	width: 31%;
+	margin-right: 3.3%;
+}
+.colLayout.cols3 .colPart + .colPart + .colPart {
+	float: right;
+	margin-left: -1%;
+	margin-right: 0 !important;
+}
+/* Cols 4 */
+.colLayout.cols4 .colPart {
+	width: 23%;
+	margin-right: 2.5%;
+}
+.colLayout.cols4 .colPart + .colPart + .colPart + .colPart {
+	float: right;
+	margin-right: 0 !important;
+}
+
+.cols2WideLeft .stickRight { /*stop the right column from falling off in wide 2 column layouts in ie6*/
+	width:40% !important;
+	float:right;
+}
+
+/* SidePane
+---------------------------------------*/
+.sidePaneLayout { /* fix for ie */
+	display: block; /* clearfix */
+	width: 100%;
+	margin: 0 0 .8em 0;
+}
+.sidePaneLayout:after { /* clearfix */
+    display: block;
+    clear: both;
+    height: 0;
+    content: ".";
+    visibility: hidden;
+}
+.sidePaneWrap {
+	margin: 0 250px 0 0;		
+}
+.sidePaneWrapper {
+    margin: 0 31% 0 0;
+}
+.sidePaneContent { 
+	float: left; 
+	margin: 0; /* fix for ie6 */
+	width: 100%;
+}
+.sidePane { 
+	float: right;
+	margin: 0;
+	width: 240px;
+	text-align: right;
+}
+.sidePaneHeadingRight{
+	float: right;
+	margin: 0;
+	width: 30%;
+	text-align: right;
+}
+.sidePaneHeadingLeft {
+	float: right;
+	margin: 0;
+	width: 30%;
+	text-align: left;
+}
+.sidePane .previewImage {
+	margin: 0 0 10px 10px;
+	padding: 0;
+	font-size: 1.4em;
+}
+
+.sidePane .previewMessage {
+	margin:0 0 5px 31px;
+	text-align:left;
+	font-size:1.1em;
+	line-height:1em;
+}
+
+.sidePane .pullOut {
+	text-align: left;
+}
+.hasButton .sidePane {
+	margin: 1.2em 0 0 0;
+}
+.hasButton .sidePaneLayout .sidePaneContent {
+	padding-top: 10px;
+}
+.hasButton .sidePaneLayout .sidePane .buttonLink {
+	margin-bottom: 0.7em;
+}
+.content .inner .sidePaneLayout {
+	margin-bottom: 0;
+}
+
+/* Panels
+---------------------------------------*/
+.panel {
+	display: block;
+}
+.panel:after {
+    display: block;
+    clear: both;
+    height: 0;
+    content: ".";
+    visibility: hidden;
+}
+/* changes to accomodate different markup in P07.10 - navBar, customerDetails and infoMessage appear outside panel */
+/* border and padding moved above to .primary */
+.primary .panel {
+	margin: 0 0 1em;
+	padding: 0 10px 10px 0px;
+	background: #FFF;
+}
+.primary .panel:last-child {
+	margin-bottom: 4em;
+}
+.primary .panel + .panel {
+	margin: -2em 10px 1em 0;
+	padding: 17px 4px 9px 0;
+	border: none;
+    border-top: 1px solid #BFBFBF;
+	background-color: #fff;
+	position: relative;	
+}
+.primary .panel .panelWrap {
+	position: relative;
+}
+.primary .panel .inner,
+.content .inner {
+	margin: 0px;
+}
+.primary .panel .showHide .inner {
+	margin-left: 0;
+	margin-right: 0;
+}
+.primary .panel .inner.dash, 
+.primary .panel .inner.dashGrad,
+.primary .panel .inner.dashBottom {
+	margin: 0;
+	padding: 15px 10px 0;
+	border-top:1px solid #EFEDEA;
+}
+
+.primary .panel .subPanel .inner {
+	margin: 0 6px 0 0px;
+	padding-left: 0;
+	padding-right: 0;
+}
+.primary .panel .inner > .inner,
+.content .inner > .inner {
+	margin: 0;
+}
+.content .primary .panel ul.actions + .dash,
+.content .panel .infoMessage.success + .dash,
+.content .panel .infoMessage.alert + .dash,
+.content .primary .panel ul.actions + .savingsBenefits,
+.content .primary .buttonLink + .dash {
+	border-top: none;
+}
+.primary .subPanel {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:6px;
+	-moz-border-radius-bottomright:6px;
+	-moz-border-radius-topleft:6px;
+	-moz-border-radius-topright:6px;
+	background:#F6F6F6 none repeat scroll 0 0;
+	border:1px solid #E3E3E3;
+	margin:1.7em 15px;
+	padding:9px 4px;
+}
+.primary .subPanel {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border: none;
+}
+.content .subPanel table thead th, .content .subPanel table thead td {
+	border-bottom:1px solid #B6BECF;
+}
+
+.primary .panel .inner.dashBottom {
+	margin: 1.2em 0 1em;
+	padding-bottom: .7em;
+}
+.content .applyBulkPayment div.dash{
+	border-top:1px solid #B6BECF;
+}
+.primary .panel .inner.dashGrad,
+.primary .panel .dashGrad {
+	border-top: 1px solid #d5d5d6;
+}
+.primary .panel .formField + .inner.dashGrad,
+.primary .panel .formField + .dashGrad {
+	margin:1em 0 0;
+}
+
+.primary .panel fieldset.dashGrad {
+	padding: 20px 0 0 0;
+}
+
+.primary .panel .solidDividerLower {
+	margin: 0 0 1em;
+	padding: 1.7em 14px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+.primary .panel form.solidDividerLower {
+	padding: 0;
+}
+
+.primary .panel .floatImage img {
+	float: right;
+	margin-left: 50px;
+}
+
+.primary .subPanel {
+	margin: 1.7em 0;
+	padding: 9px 9px 9px 0px;
+	background: #FFFFFF;
+}
+.primary .inner .subPanel, 
+.primary .colLayout .subPanel {
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+.primary .subPanel .subPanel {
+	margin-left: 0;
+	margin-right: 0;
+}
+.primary .boxHighlight {
+	background-color: #FFFFFF;
+}
+.content .subPanel.boxHighlight {
+	background-color: #f2f4f8;
+}
+.secondary .panel {
+	margin: 0 0 2em;
+	padding: 10px 10px 0;
+	background-color: #FFFFFF;
+}
+.secondary .subPanel {
+	margin: 0 0 10px 0;
+	padding: 9px;
+	border: 1px solid #bfbfbf;
+	background: #FFF;
+}
+.secondary .subPanelShadow {
+	background: #FFFFFF;
+	margin-bottom: 3px;
+	margin-top: 10px;
+	padding-bottom: 7px;
+	border: 0.5px solid #333333;
+}
+.primary .panel .panelWrapOuter {
+	margin-top: 1.4em;
+	padding-top: 3px;
+	border-top: 1px solid #e5e5e5;
+}
+.primary .panel .panelWrapOuter .panelWrap {
+	padding: 1.4em 0 0;
+}
+
+.secondary .panel a.linkMore { /* fix for ie7 */
+	margin-left: 0;
+	padding-left:22px;
+	color: #006A4D;
+	background-position: 1px 1px;
+}
+
+.secondary .panel .subPanelWide{
+	padding:9px 5px;
+}
+.secondary .panel .subPanelWide h2,
+.secondary .panel .subPanelWide .indent{
+	margin:0 4px;
+}
+.secondary .subPanelShadow div.clearer {
+	margin-top: -1px;
+}
+.secondary .subPanel > ul.linkList:first-child {
+	margin-bottom: -0.5em;
+}
+@-moz-document url-prefix() {
+	.secondary .subPanel > ul.linkList:first-child {
+		margin-bottom: -0.9em;
+	}
+}
+.secondary .subPanel ul.linkList {
+	margin-bottom: 0;
+}
+.panelLegend {
+  padding: 10px 35px;
+}
+/* Panels - mimic CSS3
+---------------------------------------*/
+.primary .subPanel-t {
+	margin: 0 15px 1.7em 15px;
+	padding: 0;	/* fix for ie */
+	background: #f8f8f8 url(../img/panels/primary_subpanel_top.png) 0 0 repeat-x;
+}
+.primary .inner .subPanel-t {
+	margin-left: 0;
+	margin-right: 0;
+}
+.primary .subPanel-r {
+	background: url(../img/panels/primary_subpanel_right.png) right top repeat-y;
+}
+.primary .subPanel-b {
+	background: url(../img/panels/primary_subpanel_bottom.png) left bottom repeat-x;
+}
+.primary .subPanel-l {
+	background: url(../img/panels/primary_subpanel_left.png) 0 0 repeat-y;
+}
+.primary .subPanel-tl {
+	background: url(../img/panels/primary_subpanel_tl.png) 0 0 no-repeat;
+}
+.primary .subPanel-tr {
+	background: url(../img/panels/primary_subpanel_tr.png) right top no-repeat;
+}
+.primary .subPanel-br {
+	background: url(../img/panels/primary_subpanel_br.png) right bottom no-repeat;
+}
+.primary .subPanel-bl { /* fix for ie */
+	background: url(../img/panels/primary_subpanel_bl.png) left bottom no-repeat;
+}
+.primary .subPanel-t .subPanel { /* fix for ie6 */
+	min-height: 16px;
+	margin: 0;
+	padding: 9px 5px;
+	border: 0;
+	background: transparent;
+	/* Standard */
+	box-shadow: 0;
+	border-radius: 0;
+	/* Mozilla */
+	-moz-box-shadow: 0;
+	-moz-border-radius: 0;
+}
+
+.secondary .subPanelOuter {
+	margin: 0;
+	padding: 0;	/* fix for ie */
+	background: #fff;
+	zoom: 1;
+	position: relative;
+}
+.secondary .subPanelInner {
+	background: url(../img/panels/secondary_subpanel_bottom.png) left bottom no-repeat;
+	zoom: 1;
+	position: relative;
+}
+.secondary .subPanelOuter .subPanel {
+	margin: 0;
+	padding: 8px 9px 6px 9px;
+	border: 0;
+	background: transparent url(../img/panels/secondary_subpanel_top.png) 0 0 no-repeat;
+	/* Standard */
+	border-radius: 0;
+	/* Mozilla */
+	-moz-border-radius: 0;
+}
+
+
+/* Errors
+---------------------------------------*/
+p.error {
+	background:transparent url(../img/icons/error.png) no-repeat scroll left top;
+	color:#DB0000;
+	font-weight:bold;
+	margin:0 10px 1.4em;
+	padding:3px 0 3px 32px;
+}
+.inner p.error {
+	margin: 0 0 1.4em 0.9em;
+}
+.panel .inner p.error {
+	margin: 0 0 1.4em;
+}
+.content p.error a.linkBullet {
+	display: block;
+	margin-left: 0;
+}
+
+
+/***************
+*   FOOTER
+****************/
+
+#footer {
+    background-color:#006A4D;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#footerInner {
+    position: relative;
+    margin: 0 auto;
+    padding: 12px 36px;
+    border-bottom: 0;
+	text-align: left;
+	max-width: 928px;
+	min-width: 320px;
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+#footer li {
+    padding: 0 5px;
+    border: none;
+    display: inline;
+}
+#footer li {
+	padding: 0 5px;
+	border-left: 1px solid #fff;
+	display: inline;
+}
+
+#footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#footer a:hover,
+#footer a:focus,
+#footer a:active {
+	text-decoration: underline;
+}
+.primaryWrap {
+	margin: 0 320px 0 0;		
+}
+
+#footer li:not(:first-child) a {
+    font-weight: normal;
+}
+
+.Accessibilityhidden {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+
+/***************
+*   SKIP LINKS
+****************/
+
+ul#skiplinks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#skiplinks {
+    position: relative;
+}
+
+#skiplinks li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#skiplinks a {
+    position: absolute;
+    top: 0;
+    left: -252px;
+    z-index: -1;
+    overflow: hidden;
+    font-size: 1em!important;
+    font-weight: bold;
+    color: #FFF;
+}

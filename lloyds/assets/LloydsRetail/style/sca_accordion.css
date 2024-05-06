@@ -1,0 +1,397 @@
+/*
+-----------------------------------------------
+Galaxy IB - Lloyds TSB CSS: Accordion
+----------------------------------------------- */
+
+/* Accordion (secondary)
+---------------------------------------*/
+.secondary .accordion {
+	margin: 0 0 8px 0;
+}
+.secondary .accordion .part { /* fix for ie6 */
+	margin: 0px;
+	padding: 18px;
+	background: #FFF;
+	border: 0.5px solid #bfbfbf;
+}
+
+.secondary .accordion .part:first-child {
+    border-bottom: none;
+}
+
+.secondary .accordion h2 { /* fix for ie6 */
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-weight: 500;
+	color: #006A4D;
+	font-family: 'Lloyds_Jack_Medium',Arial,Helvetica,sans-serif;
+}
+.secondary .accordion h2 a { /* fix for ie */
+	display: block;
+	position: relative; /* give focus outline */
+	padding: 0 32px 0 0;
+	text-decoration: none;
+	color: #006A4D;
+}
+.content .tillReceipt.ui-accordion .part .trigger a {
+	padding-left: 20px;
+	text-decoration : none;
+	background: url(../img/icons/Chevron-down-primary.svg) 0 1px no-repeat;
+}
+.content .accordion h2 .ui-icon {
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	width: 14px;
+	height: 14px;
+	background: url(../img/icons/Chevron-down-primary.svg) 0 0 no-repeat;
+	background-size: 14px;
+}
+
+.secondary .accordion h2.ui-state-active .ui-icon,
+.content .accordion h2.ui-state-active .ui-icon {
+	background-image: url(../img/icons/Chevron-up-primary.svg) 0 0 no-repeat;
+	background-size: 14px;
+}
+.secondary .accordion .paneInner { /* fix for ie7 */
+	padding: 10px 0 1px 0;
+	font-size: 14px;
+}
+
+.secondary .accordion ol li {
+	margin-bottom: 0.5em;
+}
+
+.secondary .accordion h3 {
+	/* should live in accordian.js*/
+	color:#333333;
+	font-size: 1.3em;
+}
+
+/* Contact us
+---------------------------------------*/
+.content .quickContact h2 {
+	color: #333333;
+}
+
+.content .quickContact h3 {
+	margin-bottom: .25em;
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #333333;
+}
+
+.content .quickContact h2 {
+	color: #333333;
+}
+
+/* Quick FAQs
+---------------------------------------*/
+.content ul.quickFAQs {
+	margin-bottom: 1em;
+	list-style: none;
+	padding-left: 20px;
+	padding-top: 8px;
+}
+
+.content ul.quickFAQs li { /* fix for ie */
+	margin-bottom: .3em;
+	background: transparent;
+	padding: 0;
+}
+
+.hasJS .content ul.quickFAQs li {
+	padding-left: 22px;
+}
+
+.content ul.quickFAQs h3 {
+	margin: 0;
+	padding: 0 0 .3em 0;
+	font-size: 1em;
+	color: #505050;
+}
+.content ul.quickFAQs.ui-accordion li {
+	padding: 0;
+}
+.content ul.quickFAQs.ui-accordion .qfaqCont {
+	padding-left: 22px;
+	height: auto !important;
+}
+.content ul.quickFAQs li .qfaqTrigger,
+.content ul.quickFAQs li .qfaqTrigger a {
+	display: block;
+	text-decoration: none;
+	color: #505050;
+}
+.hasJS .content ul.quickFAQs li .qfaqTrigger{
+	cursor:pointer;
+	padding-left: 22px;
+	background: url(../img/icons/Chevron-down-primary.svg) 0 2px no-repeat;
+	background-size: 13px;
+}
+.hasJS .content .secondary ul.quickFAQs li .qfaqTrigger {
+	color: #505050;
+}
+.content ul.quickFAQs li .qfaqTrigger {
+        color: #333333;
+}
+.content ul.quickFAQs li .qfaqTrigger.ui-state-active{
+	background: url(../img/icons/Chevron-up-primary.svg) 0 2px no-repeat;
+	background-size: 13px;
+}
+
+
+.content ul.linkList.helpSupport li a {
+	color:#006a4d;
+}
+.content ul.quickFAQs.ui-accordion li ul {
+	margin: 0 0 1em;
+}
+.content ul.quickFAQs.ui-accordion li ul li {
+	background: transparent url(../img/bullet.png) no-repeat scroll 9px 0.5em;
+	padding-left: 22px;
+	position: relative;
+}
+.content .secondary .ui-accordion ol {
+	margin: 0 0 1em 0.45em;
+	padding-left: 22px;
+}
+
+.content .secondary .ui-accordion p {
+	margin-bottom: 1.5em;
+}
+
+.content ul.quickFAQs.ui-accordion li ol li {
+	display: list-item;
+}
+
+.secondary p.intro {
+        color: #333333;
+}
+
+/* Primary Accordion
+---------------------------------------*/
+.primary .accordion {
+	margin: 0 14px 1.2em 14px;
+	padding: 0;
+}
+.primary .inner .accordion {
+	margin-left: 0;
+	margin-right: 0;
+}
+.primary .accordion .part {
+	margin: 0 0 5px 0;
+	padding: .6em 0 1px 0;
+	border: 1px solid #c4c4c4;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: #FFF;
+}
+.primary .accordion .part.selected {
+	border-color: #006a4d;
+}
+.primary .accordion .pane { /* fix for ie */
+	margin: 0; /* use padding for horizontal measurments for accordion */
+	padding: .4em 8px 1px 30px;
+}
+.primary .accordion h2.trigger, .primary .accordion h3.trigger {
+	margin: 0 8px .5em 8px;
+	font-size: 1.8em; /* QC 79502 change from 1.2em to 1.8em */
+	font-weight: bold;
+	color: #505050;
+}
+.primary .accordion .trigger a {
+	padding-left: 22px;
+	text-decoration: none;
+	color: #505050;
+	background: url(../img/icons/Chevron-down-primary.svg) 0 1px no-repeat;
+}
+.primary .accordion .trigger.ui-state-active a {
+	background-image: url(../img/icons/Chevron-up-primary.svg);
+}
+ /* retro-fit styling */
+.primary .accordion .partTop {
+	width: 100%;
+	height: 1px;
+	margin-bottom: -1px;
+}
+.primary .accordion .partTop .tl, .primary .accordion .partTop .tr {
+	width: 5px;
+	height: 5px;
+	margin: -7px 0 0 0;
+}
+.primary .accordion .partTop .tl {
+	float: left;
+	margin-left: -1px;
+	background: #fff url(../img/panels/primary_accordion_panels_sprite.png) 0 0 no-repeat;
+}
+.primary .accordion .selected .partTop .tl {
+	background-position: -24px 0;
+}
+.primary .accordion .partTop .tr {
+	float: right;
+	margin-right: -1px;
+	background: #fff url(../img/panels/primary_accordion_panels_sprite.png) -6px 0 no-repeat;
+}
+.primary .accordion .selected .partTop .tr {
+	background-position: -30px 0;
+}
+.primary .accordion .partBottom {
+	width: 100%;
+	height: 1px;
+	margin-top: -1px;
+}
+.primary .accordion .partBottom .bl, .primary .accordion .partBottom .br {
+	width: 5px;
+	height: 5px;
+	margin: -2px 0 0 0;
+}
+.primary .accordion .partBottom .bl {
+	float: left;
+	margin-left: -1px;
+	background: #fff url(../img/panels/primary_accordion_panels_sprite.png) -12px 0 no-repeat;
+}
+.primary .accordion .selected .partBottom .bl {
+	background-position: -36px 0px;
+}
+.primary .accordion .partBottom .br {
+	float: right;
+	margin-right: -1px;
+	background: #fff url(../img/panels/primary_accordion_panels_sprite.png) -18px 0 no-repeat;
+}
+.primary .accordion .selected .partBottom .br {
+	background-position: -42px 0px;
+}
+
+
+/* Primary Accordion (Light)
+---------------------------------------*/
+.primary .accordionLight {
+	margin-bottom: 1em;
+	padding: 0;
+}
+.primary .accordionLight .part { /* fix for ie6 */
+	margin: 0;
+	padding: 1em 14px 1px 14px;
+	background: #fff url(../img/horiz_div.png) 0 0 repeat-x;
+}
+.primary .inner .accordionLight .part {
+	padding-left: 0;
+	padding-right: 0;
+}
+.primary .accordionLight > .part:first-child {
+	background: transparent;
+}
+.primary .accordionLight .part.selected {
+	border-top: 1px solid #006a4d;
+	border-bottom: 2px solid #006a4d;
+	background: transparent;
+}
+.primary .accordionLight .part.selected + .part {
+	background: transparent;
+}
+.primary .accordionLight .pane {
+	margin: 0; /* use padding for horizontal measurments for accordion */
+	padding: 1px 0 0 22px;
+}
+.primary .accordionLight h2.trigger, .primary .accordionLight h3.trigger {
+	margin: 0 0 .7em 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #505050;
+}
+.primary .accordionLight .trigger a {
+	padding-left: 22px;
+	text-decoration: none;
+	color: #505050;
+	background: url(../img/icons/Chevron-down-primary.svg) 0 1px no-repeat;
+}
+.primary .accordionLight .trigger.ui-state-active a {
+	background-image: url(../img/icons/Chevron-up-primary.svg);
+}
+.primary .accordion h2 {
+	position: relative;
+}
+/* Help info
+---------------------------------------*/
+.content .helpInfo {
+	display: block;
+}
+.content .helpInfo:after {
+    display: block;
+    clear: both;
+    height: 0;
+    content: ".";
+    visibility: hidden;
+}
+
+.content .helpInfo h3 {
+	margin: 0 0 .5em 0;
+	font-size: 1.4em;
+	color: #333333;
+}
+.content .helpInfo .helpInfoItem {
+	float: left;
+	width: 47%;
+}
+.content .helpInfo .helpInfoItem + .helpInfoItem {
+	float: right;
+}
+
+.content .helpInfo .linkBullet {
+	position: static;
+	margin-left: 0;
+}
+
+/* Show/Hide Accordion
+---------------------------------------*/
+.showHideAccordion {
+	margin-bottom: 1em;
+}
+.showHideAccordion .part { /* fix for ie */
+	padding: 0;
+	margin-bottom: .3em;
+	background: transparent;
+}
+.showHideAccordion .trigger a {
+	text-decoration: none;
+	color: #505050;
+}
+
+/* RHS OMM Link */
+.content .accordion h2 .omm-icon {
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	width: 14px;
+	height: 14px;
+	background: url(../img/icons/arrow.png) 0 0 no-repeat;
+	cursor:pointer;
+}
+
+/* AJAX - loaded content */
+.spinner {
+    background: url("../img/opt-in/spinner-20x20.gif") no-repeat scroll 7px 0 transparent;
+    font-size: 1.2em;
+    margin: 0 0 0.8em;
+    min-height: 20px;
+    padding: 2px 0 0 2.6em;
+}
+
+.enterActivationCode .accordion h2.trigger {
+    color: #006A4D;
+    padding-left: 0px;
+    font-family:'Lloyds_Jack_Medium',Arial,Helvetica,sans-serif;
+}
+
+.enterActivationCode h2.trigger.linkPointer.hasLink.ui-accordion-header.ui-helper-reset.ui-state-default.ui-corner-all {
+    margin-left: 0;
+    padding-left: 0;
+}	
+.enterActivationCode h2.trigger.linkPointer.hasLink.ui-accordion-header.ui-helper-reset.ui-state-active.ui-corner-top {
+    margin-left: 0;
+    padding-left: 0;
+}
+

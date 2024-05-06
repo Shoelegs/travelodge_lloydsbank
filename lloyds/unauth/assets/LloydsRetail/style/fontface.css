@@ -1,0 +1,44 @@
+/*
+-----------------------------------------------
+Galaxy IB - Lloyds Banking CSS
+----------------------------------------------- */
+
+/* Lloyds Jack Bold
+--------------------------------------- */
+
+@font-face {
+    font-family: 'Lloyds_Jack_Bold';
+    src: url('../fonts/LloydsBankJackBold/lloyds_bank_jack-boldWEB.eot');
+    src: url('../fonts/LloydsBankJackBold/lloyds_bank_jack-boldWEB.woff') format('woff'),
+         url('../fonts/LloydsBankJackBold/lloyds_bank_jack-boldWEB.ttf') format('truetype'),
+         url('../fonts/LloydsBankJackBold/lloyds_bank_jack-boldWEB.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Lloyds Jack Light
+--------------------------------------- */
+
+@font-face {
+    font-family: 'Lloyds_Jack_Light';
+    src: url('../fonts/LloydsBankJackLight/lloyds_bank_jack-lightWEB.eot');
+    src: url('../fonts/LloydsBankJackLight/lloyds_bank_jack-lightWEB.ttf') format('ttf'),
+        url('../fonts/LloydsBankJackLight/lloyds_bank_jack-lightWEB.svg') format('svg'),
+        url('../fonts/LloydsBankJackLight/lloyds_bank_jack-lightWEB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Lloyds Jack Medium
+--------------------------------------- */
+
+@font-face {
+    font-family: 'Lloyds_Jack_Medium';
+    src: url('../fonts/LloydsBankJackMedium/lloyds_bank_jack-mediumWEB.eot');
+    src: url('../fonts/LloydsBankJackMedium/lloyds_bank_jack-mediumWEB.svg') format('svg'),
+        url('../fonts/LloydsBankJackMedium/lloyds_bank_jack-mediumWEB.ttf') format('ttf'),
+        url('../fonts/LloydsBankJackMedium/lloyds_bank_jack-mediumWEB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

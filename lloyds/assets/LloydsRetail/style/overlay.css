@@ -1,0 +1,230 @@
+/*
+-----------------------------------------------
+Galaxy IB - Lloyds TSB CSS: Overlay
+----------------------------------------------- */
+
+/* Overlay
+---------------------------------------*/
+#olMask,
+#olMaskColleagueBar{ /* fix for ie */
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #FFF;
+	opacity: .5;
+}
+.togglep4pOverlay .olMask {
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -khtml-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+#olMask.dark { /* fix for ie */
+	background: #000;
+	opacity: .75;
+}
+#overlayWrapper {
+	position: fixed;
+	z-index: 2001;
+	left: 50%;
+	top: 50%;
+	margin:  0;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+}
+#overlayWrapper.loaded {
+	position: static;
+	z-index: 1001;
+	left: auto;
+	top: auto;
+	margin:  0;
+	padding: 0;
+	width: auto;
+	height: auto;
+}
+#overlayWrapper.loaded #ui-datepicker-div {
+	z-index: 10010;
+} 
+#overlay {
+	position: absolute;
+	z-index: 2001;
+	left: 50%;
+	top: 50%;
+	margin:  -60px 0 0 -253px;
+	padding: 9px;
+	width: 517px;
+	text-align: left;
+	background: #e0e0e0;
+	border: 1px solid #C7C7C7;
+	/* Standard */
+	box-shadow: 1px 1px 5px #c7c7c7;
+	/* border-radius: 8px; */
+	/* Webkit */
+	-webkit-box-shadow: 1px 1px 5px #c7c7c7;
+	/* -webkit-border-radius: 8px; */
+	/* Mozilla*/
+	-moz-box-shadow: 1px 1px 5px #c7c7c7;
+	/* -moz-border-radius: 8px; */
+}
+#overlayCont {
+	padding: 8px;
+	min-height: 100px;
+	background: #FFF;
+	border: 1px solid #D3D3D3;
+	/* Standard */
+	/* border-radius: 5px; */
+	/* Mozilla */	
+	/* -moz-border-radius: 5px; */
+	/* Webkit */
+	/* -webkit-border-radius: 5px; */
+}
+.overlayContInner {
+	padding: 14px;
+}
+.overlayContInner h2 {
+	color: #00864f;
+	font-size: 2em;
+}
+
+#overlay .spinner {
+	width: 30px;
+	height: 30px;
+	margin: 35px auto 0 auto;
+	background: url(../img/spinner.gif) 0 0 no-repeat;
+}
+#overlay p.close {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 18px;
+	height: 18px;
+	margin: 0;
+	padding: 1px 0 1px 1px;
+	overflow: hidden;
+	background: url(../img/icons/overlay_close.png) no-repeat scroll right 0 transparent;
+}
+#overlay p.close a {
+	display: block;
+	padding:0 20px 0;
+	text-indent:-9999px;
+}
+
+/* Logout warning
+---------------------------------------*/
+.logoutWarning h2 {
+	margin-top: .3em;
+	padding: 0 0 0 47px;
+	font-size: 2em;
+	color: #505050;
+	background: url(../img/icons/error.png) 11px 3px no-repeat;
+}
+.logoutMsg {
+	padding: 0 13px 0 47px;
+}
+.logoutWarning ul.actions {
+	margin: 1.3em 0 0 0;
+	padding-left: 45px;
+}
+.logoutWarning ul.actions li a.m-action-button-logout span{
+	display:none;
+}
+
+/* Select credit card
+---------------------------------------*/
+.selectCreditCard h2 {
+	color: #00864F;
+	font-size: 1.7em;
+	margin: 10px 160px 10px 14px;
+}
+.selectCreditCard .formField {
+	width: 324px;
+}
+.selectCreditCard fieldset img {
+	float: right;
+	margin: 10px 30px 0 30px;
+}
+.selectCreditCard select {
+	width: 290px;
+}
+
+/* M19 branch details overlay
+---------------------------------------*/
+#overlay .branchDetails {
+	border: none;
+}
+
+.branchDetails .map {
+	float: right;
+}
+.branchDetails .map img {
+	border: 1px solid #c5c5c5;
+}
+
+.branchDetails .details {
+	float: left;
+	width: 35%;
+}
+.branchDetails .details .adr {
+	margin: 0 0 1.7em;
+}
+.branchDetails .details .adr span {
+	display: block;
+	margin: 0 0 0.2em;
+	font-size: 1.2em;
+}
+.branchDetails .details ul li {
+	margin: 0 0 0.2em;
+	padding-left: 0;
+	background: none;
+}
+.branchDetails .details ul li span {
+	display: block;
+	float: left;
+	width: 6em;
+}
+#overlay .branchDetails h3 {
+	clear:both;
+}
+#overlay ul.actions.branchActions {
+	padding-top: 1em;
+}
+
+#overlay ul.actions.branchActions li a.print {
+	padding-left: 23px;
+	line-height: 2em;
+	font-weight: bold;
+	background:transparent url(../img/icons/print.png) no-repeat scroll 3px 5px;
+}
+
+#overlayCont .formSubmitError {
+	margin-left: 0;
+}
+#overlayCont .bulkPayments .formFieldInner{
+	padding-left:15px;	
+}
+#overlayCont .bulkPayments .businessAccountList{
+	padding-top:10px;	
+}
+
+/* scrollable content block */
+#overlay .scrollable {
+    height: 300px;
+    margin: 10px 0;
+	padding: 10px;
+    overflow-x: auto;
+    overflow-y: scroll;
+    border: 1px solid #CCC;
+}
